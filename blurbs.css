@@ -1,0 +1,6554 @@
+/*
+*	Blurbs Framework v.1.0
+*	http://kutemukan.com / Kutemukan.com Project
+*
+* 	License under MIT
+*
+*	Rubi Jihantoro | @jihantoro
+*/
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+mark {
+  color: #000;
+  background: #ff0;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 1px solid #c0c0c0;
+}
+legend {
+  padding: 0;
+  border: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0;
+}
+.rtl{
+	direction: rtl;
+}
+
+/************************************
+*	First Code
+* Date 10/12/2016
+* Film = Olympus Has Fallen
+* Rubi Jihantoro
+* HTML Elements Define
+*************************************/
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  	overflow-x: hidden !important;
+  	overflow-y: auto;
+  	min-width: 320px;
+  	background: #FFFFFF;
+  	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 14px;
+  	line-height: 1.4285em;
+  	font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  min-height: 1rem;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.920rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.285rem;
+}
+
+h5 {
+  font-size: 1.152rem;
+}
+
+h6 {
+	font-size: 0.851rem;
+}
+textarea{
+  margin: 0em;
+  -webkit-appearance: none;
+  tap-highlight-color: rgba(255, 255, 255, 0);
+  padding: 0.78571429em 1em;
+  background: #FFFFFF;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  outline: none;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  -webkit-transition: color 0.1s ease, border-color 0.1s ease;
+  transition: color 0.1s ease, border-color 0.1s ease;
+  font-size: 1em;
+  line-height: 1.2857;
+  resize: vertical;
+}
+/********************************************
+* Blurbs Icon
+* #icon (without bb) - Rubi Jihantoro
+* Offline Mode :(
+*********************************************/
+@font-face {
+  font-family: 'Icons';
+  src: url("./blurbs-icon/fonts/icons.eot");
+  src: url("./blurbs-icon/fonts/icons.eot?#iefix") format('embedded-opentype'), url("./blurbs-icon/fonts/icons.woff2") format('woff2'), url("./blurbs-icon/fonts/icons.woff") format('woff'), url("./blurbs-icon/fonts/icons.ttf") format('truetype'), url("./blurbs-icon/fonts/icons.svg#icons") format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+i.icon {
+  display: inline-block;
+  opacity: 1;
+  width: 1.18em;
+  height: 1em;
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-align: center;
+  speak: none;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+i.icon:before {
+  background: none !important;
+}
+
+i.link.icon,
+i.link.icons {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+
+i.link.icon:hover,
+i.link.icons:hover {
+  opacity: 1 !important;
+}
+/*******************************
+            Icons
+*******************************/
+
+/* Web Content */
+
+i.icon.search:before {
+  content: "\f002";
+}
+
+i.icon.mail.outline:before {
+  content: "\f003";
+}
+
+i.icon.signal:before {
+  content: "\f012";
+}
+
+i.icon.setting:before {
+  content: "\f013";
+}
+
+i.icon.home:before {
+  content: "\f015";
+}
+
+i.icon.inbox:before {
+  content: "\f01c";
+}
+
+i.icon.browser:before {
+  content: "\f022";
+}
+
+i.icon.tag:before {
+  content: "\f02b";
+}
+
+i.icon.tags:before {
+  content: "\f02c";
+}
+
+i.icon.image:before {
+  content: "\f03e";
+}
+
+i.icon.calendar:before {
+  content: "\f073";
+}
+
+i.icon.comment:before {
+  content: "\f075";
+}
+
+i.icon.shop:before {
+  content: "\f07a";
+}
+
+i.icon.comments:before {
+  content: "\f086";
+}
+
+i.icon.external:before {
+  content: "\f08e";
+}
+
+i.icon.privacy:before {
+  content: "\f084";
+}
+
+i.icon.settings:before {
+  content: "\f085";
+}
+
+i.icon.comments:before {
+  content: "\f086";
+}
+
+i.icon.external:before {
+  content: "\f08e";
+}
+
+i.icon.trophy:before {
+  content: "\f091";
+}
+
+i.icon.payment:before {
+  content: "\f09d";
+}
+
+i.icon.feed:before {
+  content: "\f09e";
+}
+
+i.icon.alarm.outline:before {
+  content: "\f0a2";
+}
+
+i.icon.tasks:before {
+  content: "\f0ae";
+}
+
+i.icon.cloud:before {
+  content: "\f0c2";
+}
+
+i.icon.lab:before {
+  content: "\f0c3";
+}
+
+i.icon.mail:before {
+  content: "\f0e0";
+}
+
+i.icon.dashboard:before {
+  content: "\f0e4";
+}
+
+i.icon.comment.outline:before {
+  content: "\f0e5";
+}
+
+i.icon.comments.outline:before {
+  content: "\f0e6";
+}
+
+i.icon.sitemap:before {
+  content: "\f0e8";
+}
+
+i.icon.idea:before {
+  content: "\f0eb";
+}
+
+i.icon.alarm:before {
+  content: "\f0f3";
+}
+
+i.icon.terminal:before {
+  content: "\f120";
+}
+
+i.icon.code:before {
+  content: "\f121";
+}
+
+i.icon.protect:before {
+  content: "\f132";
+}
+
+i.icon.calendar.outline:before {
+  content: "\f133";
+}
+
+i.icon.ticket:before {
+  content: "\f145";
+}
+
+i.icon.external.square:before {
+  content: "\f14c";
+}
+
+i.icon.bug:before {
+  content: "\f188";
+}
+
+i.icon.mail.square:before {
+  content: "\f199";
+}
+
+i.icon.history:before {
+  content: "\f1da";
+}
+
+i.icon.options:before {
+  content: "\f1de";
+}
+
+i.icon.text.telephone:before {
+  content: "\f1e4";
+}
+
+i.icon.find:before {
+  content: "\f1e5";
+}
+
+i.icon.wifi:before {
+  content: "\f1eb";
+}
+
+i.icon.alarm.mute:before {
+  content: "\f1f6";
+}
+
+i.icon.alarm.mute.outline:before {
+  content: "\f1f7";
+}
+
+i.icon.copyright:before {
+  content: "\f1f9";
+}
+
+i.icon.at:before {
+  content: "\f1fa";
+}
+
+i.icon.eyedropper:before {
+  content: "\f1fb";
+}
+
+i.icon.paint.brush:before {
+  content: "\f1fc";
+}
+
+i.icon.heartbeat:before {
+  content: "\f21e";
+}
+
+i.icon.mouse.pointer:before {
+  content: "\f245";
+}
+
+i.icon.hourglass.empty:before {
+  content: "\f250";
+}
+
+i.icon.hourglass.start:before {
+  content: "\f251";
+}
+
+i.icon.hourglass.half:before {
+  content: "\f252";
+}
+
+i.icon.hourglass.end:before {
+  content: "\f253";
+}
+
+i.icon.hourglass.full:before {
+  content: "\f254";
+}
+
+i.icon.hand.pointer:before {
+  content: "\f25a";
+}
+
+i.icon.trademark:before {
+  content: "\f25c";
+}
+
+i.icon.registered:before {
+  content: "\f25d";
+}
+
+i.icon.creative.commons:before {
+  content: "\f25e";
+}
+
+i.icon.add.to.calendar:before {
+  content: "\f271";
+}
+
+i.icon.remove.from.calendar:before {
+  content: "\f272";
+}
+
+i.icon.delete.calendar:before {
+  content: "\f273";
+}
+
+i.icon.checked.calendar:before {
+  content: "\f274";
+}
+
+i.icon.industry:before {
+  content: "\f275";
+}
+
+i.icon.shopping.bag:before {
+  content: "\f290";
+}
+
+i.icon.shopping.basket:before {
+  content: "\f291";
+}
+
+i.icon.hashtag:before {
+  content: "\f292";
+}
+
+i.icon.percent:before {
+  content: "\f295";
+}
+
+/* User Actions */
+
+i.icon.wait:before {
+  content: "\f017";
+}
+
+i.icon.download:before {
+  content: "\f019";
+}
+
+i.icon.repeat:before {
+  content: "\f01e";
+}
+
+i.icon.refresh:before {
+  content: "\f021";
+}
+
+i.icon.lock:before {
+  content: "\f023";
+}
+
+i.icon.bookmark:before {
+  content: "\f02e";
+}
+
+i.icon.print:before {
+  content: "\f02f";
+}
+
+i.icon.write:before {
+  content: "\f040";
+}
+
+i.icon.adjust:before {
+  content: "\f042";
+}
+
+i.icon.theme:before {
+  content: "\f043";
+}
+
+i.icon.edit:before {
+  content: "\f044";
+}
+
+i.icon.external.share:before {
+  content: "\f045";
+}
+
+i.icon.ban:before {
+  content: "\f05e";
+}
+
+i.icon.mail.forward:before {
+  content: "\f064";
+}
+
+i.icon.share:before {
+  content: "\f064";
+}
+
+i.icon.expand:before {
+  content: "\f065";
+}
+
+i.icon.compress:before {
+  content: "\f066";
+}
+
+i.icon.unhide:before {
+  content: "\f06e";
+}
+
+i.icon.hide:before {
+  content: "\f070";
+}
+
+i.icon.random:before {
+  content: "\f074";
+}
+
+i.icon.retweet:before {
+  content: "\f079";
+}
+
+i.icon.sign.out:before {
+  content: "\f08b";
+}
+
+i.icon.pin:before {
+  content: "\f08d";
+}
+
+i.icon.sign.in:before {
+  content: "\f090";
+}
+
+i.icon.upload:before {
+  content: "\f093";
+}
+
+i.icon.call:before {
+  content: "\f095";
+}
+
+i.icon.remove.bookmark:before {
+  content: "\f097";
+}
+
+i.icon.call.square:before {
+  content: "\f098";
+}
+
+i.icon.unlock:before {
+  content: "\f09c";
+}
+
+i.icon.configure:before {
+  content: "\f0ad";
+}
+
+i.icon.filter:before {
+  content: "\f0b0";
+}
+
+i.icon.wizard:before {
+  content: "\f0d0";
+}
+
+i.icon.undo:before {
+  content: "\f0e2";
+}
+
+i.icon.exchange:before {
+  content: "\f0ec";
+}
+
+i.icon.cloud.download:before {
+  content: "\f0ed";
+}
+
+i.icon.cloud.upload:before {
+  content: "\f0ee";
+}
+
+i.icon.reply:before {
+  content: "\f112";
+}
+
+i.icon.reply.all:before {
+  content: "\f122";
+}
+
+i.icon.erase:before {
+  content: "\f12d";
+}
+
+i.icon.unlock.alternate:before {
+  content: "\f13e";
+}
+
+i.icon.write.square:before {
+  content: "\f14b";
+}
+
+i.icon.share.square:before {
+  content: "\f14d";
+}
+
+i.icon.archive:before {
+  content: "\f187";
+}
+
+i.icon.translate:before {
+  content: "\f1ab";
+}
+
+i.icon.recycle:before {
+  content: "\f1b8";
+}
+
+i.icon.send:before {
+  content: "\f1d8";
+}
+
+i.icon.send.outline:before {
+  content: "\f1d9";
+}
+
+i.icon.share.alternate:before {
+  content: "\f1e0";
+}
+
+i.icon.share.alternate.square:before {
+  content: "\f1e1";
+}
+
+i.icon.add.to.cart:before {
+  content: "\f217";
+}
+
+i.icon.in.cart:before {
+  content: "\f218";
+}
+
+i.icon.add.user:before {
+  content: "\f234";
+}
+
+i.icon.remove.user:before {
+  content: "\f235";
+}
+
+i.icon.object.group:before {
+  content: "\f247";
+}
+
+i.icon.object.ungroup:before {
+  content: "\f248";
+}
+
+i.icon.clone:before {
+  content: "\f24d";
+}
+
+i.icon.talk:before {
+  content: "\f27a";
+}
+
+i.icon.talk.outline:before {
+  content: "\f27b";
+}
+
+/* Messages */
+
+i.icon.help.circle:before {
+  content: "\f059";
+}
+
+i.icon.info.circle:before {
+  content: "\f05a";
+}
+
+i.icon.warning.circle:before {
+  content: "\f06a";
+}
+
+i.icon.warning.sign:before {
+  content: "\f071";
+}
+
+i.icon.announcement:before {
+  content: "\f0a1";
+}
+
+i.icon.help:before {
+  content: "\f128";
+}
+
+i.icon.info:before {
+  content: "\f129";
+}
+
+i.icon.warning:before {
+  content: "\f12a";
+}
+
+i.icon.birthday:before {
+  content: "\f1fd";
+}
+
+i.icon.help.circle.outline:before {
+  content: "\f29c";
+}
+
+/* Users */
+
+i.icon.user:before {
+  content: "\f007";
+}
+
+i.icon.users:before {
+  content: "\f0c0";
+}
+
+i.icon.doctor:before {
+  content: "\f0f0";
+}
+
+i.icon.handicap:before {
+  content: "\f193";
+}
+
+i.icon.student:before {
+  content: "\f19d";
+}
+
+i.icon.child:before {
+  content: "\f1ae";
+}
+
+i.icon.spy:before {
+  content: "\f21b";
+}
+
+/* Gender & Sexuality */
+
+i.icon.female:before {
+  content: "\f182";
+}
+
+i.icon.male:before {
+  content: "\f183";
+}
+
+i.icon.woman:before {
+  content: "\f221";
+}
+
+i.icon.man:before {
+  content: "\f222";
+}
+
+i.icon.non.binary.transgender:before {
+  content: "\f223";
+}
+
+i.icon.intergender:before {
+  content: "\f224";
+}
+
+i.icon.transgender:before {
+  content: "\f225";
+}
+
+i.icon.lesbian:before {
+  content: "\f226";
+}
+
+i.icon.gay:before {
+  content: "\f227";
+}
+
+i.icon.heterosexual:before {
+  content: "\f228";
+}
+
+i.icon.other.gender:before {
+  content: "\f229";
+}
+
+i.icon.other.gender.vertical:before {
+  content: "\f22a";
+}
+
+i.icon.other.gender.horizontal:before {
+  content: "\f22b";
+}
+
+i.icon.neuter:before {
+  content: "\f22c";
+}
+
+i.icon.genderless:before {
+  content: "\f22d";
+}
+
+/* Accessibility */
+
+i.icon.universal.access:before {
+  content: "\f29a";
+}
+
+i.icon.wheelchair:before {
+  content: "\f29b";
+}
+
+i.icon.blind:before {
+  content: "\f29d";
+}
+
+i.icon.audio.description:before {
+  content: "\f29e";
+}
+
+i.icon.volume.control.phone:before {
+  content: "\f2a0";
+}
+
+i.icon.braille:before {
+  content: "\f2a1";
+}
+
+i.icon.asl:before {
+  content: "\f2a3";
+}
+
+i.icon.assistive.listening.systems:before {
+  content: "\f2a2";
+}
+
+i.icon.deafness:before {
+  content: "\f2a4";
+}
+
+i.icon.sign.language:before {
+  content: "\f2a7";
+}
+
+i.icon.low.vision:before {
+  content: "\f2a8";
+}
+
+/* View Adjustment */
+
+i.icon.block.layout:before {
+  content: "\f009";
+}
+
+i.icon.grid.layout:before {
+  content: "\f00a";
+}
+
+i.icon.list.layout:before {
+  content: "\f00b";
+}
+
+i.icon.zoom:before {
+  content: "\f00e";
+}
+
+i.icon.zoom.out:before {
+  content: "\f010";
+}
+
+i.icon.resize.vertical:before {
+  content: "\f07d";
+}
+
+i.icon.resize.horizontal:before {
+  content: "\f07e";
+}
+
+i.icon.maximize:before {
+  content: "\f0b2";
+}
+
+i.icon.crop:before {
+  content: "\f125";
+}
+
+/* Literal Objects */
+
+i.icon.cocktail:before {
+  content: "\f000";
+}
+
+i.icon.road:before {
+  content: "\f018";
+}
+
+i.icon.flag:before {
+  content: "\f024";
+}
+
+i.icon.book:before {
+  content: "\f02d";
+}
+
+i.icon.gift:before {
+  content: "\f06b";
+}
+
+i.icon.leaf:before {
+  content: "\f06c";
+}
+
+i.icon.fire:before {
+  content: "\f06d";
+}
+
+i.icon.plane:before {
+  content: "\f072";
+}
+
+i.icon.magnet:before {
+  content: "\f076";
+}
+
+i.icon.lemon:before {
+  content: "\f094";
+}
+
+i.icon.world:before {
+  content: "\f0ac";
+}
+
+i.icon.travel:before {
+  content: "\f0b1";
+}
+
+i.icon.shipping:before {
+  content: "\f0d1";
+}
+
+i.icon.money:before {
+  content: "\f0d6";
+}
+
+i.icon.legal:before {
+  content: "\f0e3";
+}
+
+i.icon.lightning:before {
+  content: "\f0e7";
+}
+
+i.icon.umbrella:before {
+  content: "\f0e9";
+}
+
+i.icon.treatment:before {
+  content: "\f0f1";
+}
+
+i.icon.suitcase:before {
+  content: "\f0f2";
+}
+
+i.icon.bar:before {
+  content: "\f0fc";
+}
+
+i.icon.flag.outline:before {
+  content: "\f11d";
+}
+
+i.icon.flag.checkered:before {
+  content: "\f11e";
+}
+
+i.icon.puzzle:before {
+  content: "\f12e";
+}
+
+i.icon.fire.extinguisher:before {
+  content: "\f134";
+}
+
+i.icon.rocket:before {
+  content: "\f135";
+}
+
+i.icon.anchor:before {
+  content: "\f13d";
+}
+
+i.icon.bullseye:before {
+  content: "\f140";
+}
+
+i.icon.sun:before {
+  content: "\f185";
+}
+
+i.icon.moon:before {
+  content: "\f186";
+}
+
+i.icon.fax:before {
+  content: "\f1ac";
+}
+
+i.icon.life.ring:before {
+  content: "\f1cd";
+}
+
+i.icon.bomb:before {
+  content: "\f1e2";
+}
+
+i.icon.soccer:before {
+  content: "\f1e3";
+}
+
+i.icon.calculator:before {
+  content: "\f1ec";
+}
+
+i.icon.diamond:before {
+  content: "\f219";
+}
+
+i.icon.sticky.note:before {
+  content: "\f249";
+}
+
+i.icon.sticky.note.outline:before {
+  content: "\f24a";
+}
+
+i.icon.law:before {
+  content: "\f24e";
+}
+
+i.icon.hand.peace:before {
+  content: "\f25b";
+}
+
+i.icon.hand.rock:before {
+  content: "\f255";
+}
+
+i.icon.hand.paper:before {
+  content: "\f256";
+}
+
+i.icon.hand.scissors:before {
+  content: "\f257";
+}
+
+i.icon.hand.lizard:before {
+  content: "\f258";
+}
+
+i.icon.hand.spock:before {
+  content: "\f259";
+}
+
+i.icon.tv:before {
+  content: "\f26c";
+}
+
+/* Shapes */
+
+i.icon.crosshairs:before {
+  content: "\f05b";
+}
+
+i.icon.asterisk:before {
+  content: "\f069";
+}
+
+i.icon.square.outline:before {
+  content: "\f096";
+}
+
+i.icon.certificate:before {
+  content: "\f0a3";
+}
+
+i.icon.square:before {
+  content: "\f0c8";
+}
+
+i.icon.quote.left:before {
+  content: "\f10d";
+}
+
+i.icon.quote.right:before {
+  content: "\f10e";
+}
+
+i.icon.spinner:before {
+  content: "\f110";
+}
+
+i.icon.circle:before {
+  content: "\f111";
+}
+
+i.icon.ellipsis.horizontal:before {
+  content: "\f141";
+}
+
+i.icon.ellipsis.vertical:before {
+  content: "\f142";
+}
+
+i.icon.cube:before {
+  content: "\f1b2";
+}
+
+i.icon.cubes:before {
+  content: "\f1b3";
+}
+
+i.icon.circle.notched:before {
+  content: "\f1ce";
+}
+
+i.icon.circle.thin:before {
+  content: "\f1db";
+}
+
+/* Item Selection */
+
+i.icon.checkmark:before {
+  content: "\f00c";
+}
+
+i.icon.remove:before {
+  content: "\f00d";
+}
+
+i.icon.checkmark.box:before {
+  content: "\f046";
+}
+
+i.icon.move:before {
+  content: "\f047";
+}
+
+i.icon.add.circle:before {
+  content: "\f055";
+}
+
+i.icon.minus.circle:before {
+  content: "\f056";
+}
+
+i.icon.remove.circle:before {
+  content: "\f057";
+}
+
+i.icon.check.circle:before {
+  content: "\f058";
+}
+
+i.icon.remove.circle.outline:before {
+  content: "\f05c";
+}
+
+i.icon.check.circle.outline:before {
+  content: "\f05d";
+}
+
+i.icon.plus:before {
+  content: "\f067";
+}
+
+i.icon.minus:before {
+  content: "\f068";
+}
+
+i.icon.add.square:before {
+  content: "\f0fe";
+}
+
+i.icon.radio:before {
+  content: "\f10c";
+}
+
+i.icon.minus.square:before {
+  content: "\f146";
+}
+
+i.icon.minus.square.outline:before {
+  content: "\f147";
+}
+
+i.icon.check.square:before {
+  content: "\f14a";
+}
+
+i.icon.selected.radio:before {
+  content: "\f192";
+}
+
+i.icon.plus.square.outline:before {
+  content: "\f196";
+}
+
+i.icon.toggle.off:before {
+  content: "\f204";
+}
+
+i.icon.toggle.on:before {
+  content: "\f205";
+}
+
+/* Media */
+
+i.icon.film:before {
+  content: "\f008";
+}
+
+i.icon.sound:before {
+  content: "\f025";
+}
+
+i.icon.photo:before {
+  content: "\f030";
+}
+
+i.icon.bar.chart:before {
+  content: "\f080";
+}
+
+i.icon.camera.retro:before {
+  content: "\f083";
+}
+
+i.icon.newspaper:before {
+  content: "\f1ea";
+}
+
+i.icon.area.chart:before {
+  content: "\f1fe";
+}
+
+i.icon.pie.chart:before {
+  content: "\f200";
+}
+
+i.icon.line.chart:before {
+  content: "\f201";
+}
+
+/* Pointers */
+
+i.icon.arrow.circle.outline.down:before {
+  content: "\f01a";
+}
+
+i.icon.arrow.circle.outline.up:before {
+  content: "\f01b";
+}
+
+i.icon.chevron.left:before {
+  content: "\f053";
+}
+
+i.icon.chevron.right:before {
+  content: "\f054";
+}
+
+i.icon.arrow.left:before {
+  content: "\f060";
+}
+
+i.icon.arrow.right:before {
+  content: "\f061";
+}
+
+i.icon.arrow.up:before {
+  content: "\f062";
+}
+
+i.icon.arrow.down:before {
+  content: "\f063";
+}
+
+i.icon.chevron.up:before {
+  content: "\f077";
+}
+
+i.icon.chevron.down:before {
+  content: "\f078";
+}
+
+i.icon.pointing.right:before {
+  content: "\f0a4";
+}
+
+i.icon.pointing.left:before {
+  content: "\f0a5";
+}
+
+i.icon.pointing.up:before {
+  content: "\f0a6";
+}
+
+i.icon.pointing.down:before {
+  content: "\f0a7";
+}
+
+i.icon.arrow.circle.left:before {
+  content: "\f0a8";
+}
+
+i.icon.arrow.circle.right:before {
+  content: "\f0a9";
+}
+
+i.icon.arrow.circle.up:before {
+  content: "\f0aa";
+}
+
+i.icon.arrow.circle.down:before {
+  content: "\f0ab";
+}
+
+i.icon.caret.down:before {
+  content: "\f0d7";
+}
+
+i.icon.caret.up:before {
+  content: "\f0d8";
+}
+
+i.icon.caret.left:before {
+  content: "\f0d9";
+}
+
+i.icon.caret.right:before {
+  content: "\f0da";
+}
+
+i.icon.angle.double.left:before {
+  content: "\f100";
+}
+
+i.icon.angle.double.right:before {
+  content: "\f101";
+}
+
+i.icon.angle.double.up:before {
+  content: "\f102";
+}
+
+i.icon.angle.double.down:before {
+  content: "\f103";
+}
+
+i.icon.angle.left:before {
+  content: "\f104";
+}
+
+i.icon.angle.right:before {
+  content: "\f105";
+}
+
+i.icon.angle.up:before {
+  content: "\f106";
+}
+
+i.icon.angle.down:before {
+  content: "\f107";
+}
+
+i.icon.chevron.circle.left:before {
+  content: "\f137";
+}
+
+i.icon.chevron.circle.right:before {
+  content: "\f138";
+}
+
+i.icon.chevron.circle.up:before {
+  content: "\f139";
+}
+
+i.icon.chevron.circle.down:before {
+  content: "\f13a";
+}
+
+i.icon.toggle.down:before {
+  content: "\f150";
+}
+
+i.icon.toggle.up:before {
+  content: "\f151";
+}
+
+i.icon.toggle.right:before {
+  content: "\f152";
+}
+
+i.icon.long.arrow.down:before {
+  content: "\f175";
+}
+
+i.icon.long.arrow.up:before {
+  content: "\f176";
+}
+
+i.icon.long.arrow.left:before {
+  content: "\f177";
+}
+
+i.icon.long.arrow.right:before {
+  content: "\f178";
+}
+
+i.icon.arrow.circle.outline.right:before {
+  content: "\f18e";
+}
+
+i.icon.arrow.circle.outline.left:before {
+  content: "\f190";
+}
+
+i.icon.toggle.left:before {
+  content: "\f191";
+}
+
+/* Mobile */
+
+i.icon.tablet:before {
+  content: "\f10a";
+}
+
+i.icon.mobile:before {
+  content: "\f10b";
+}
+
+i.icon.battery.full:before {
+  content: "\f240";
+}
+
+i.icon.battery.high:before {
+  content: "\f241";
+}
+
+i.icon.battery.medium:before {
+  content: "\f242";
+}
+
+i.icon.battery.low:before {
+  content: "\f243";
+}
+
+i.icon.battery.empty:before {
+  content: "\f244";
+}
+
+/* Computer */
+
+i.icon.power:before {
+  content: "\f011";
+}
+
+i.icon.trash.outline:before {
+  content: "\f014";
+}
+
+i.icon.disk.outline:before {
+  content: "\f0a0";
+}
+
+i.icon.desktop:before {
+  content: "\f108";
+}
+
+i.icon.laptop:before {
+  content: "\f109";
+}
+
+i.icon.game:before {
+  content: "\f11b";
+}
+
+i.icon.keyboard:before {
+  content: "\f11c";
+}
+
+i.icon.plug:before {
+  content: "\f1e6";
+}
+
+/* File System */
+
+i.icon.trash:before {
+  content: "\f1f8";
+}
+
+i.icon.file.outline:before {
+  content: "\f016";
+}
+
+i.icon.folder:before {
+  content: "\f07b";
+}
+
+i.icon.folder.open:before {
+  content: "\f07c";
+}
+
+i.icon.file.text.outline:before {
+  content: "\f0f6";
+}
+
+i.icon.folder.outline:before {
+  content: "\f114";
+}
+
+i.icon.folder.open.outline:before {
+  content: "\f115";
+}
+
+i.icon.level.up:before {
+  content: "\f148";
+}
+
+i.icon.level.down:before {
+  content: "\f149";
+}
+
+i.icon.file:before {
+  content: "\f15b";
+}
+
+i.icon.file.text:before {
+  content: "\f15c";
+}
+
+i.icon.file.pdf.outline:before {
+  content: "\f1c1";
+}
+
+i.icon.file.word.outline:before {
+  content: "\f1c2";
+}
+
+i.icon.file.excel.outline:before {
+  content: "\f1c3";
+}
+
+i.icon.file.powerpoint.outline:before {
+  content: "\f1c4";
+}
+
+i.icon.file.image.outline:before {
+  content: "\f1c5";
+}
+
+i.icon.file.archive.outline:before {
+  content: "\f1c6";
+}
+
+i.icon.file.audio.outline:before {
+  content: "\f1c7";
+}
+
+i.icon.file.video.outline:before {
+  content: "\f1c8";
+}
+
+i.icon.file.code.outline:before {
+  content: "\f1c9";
+}
+
+/* Technologies */
+
+i.icon.qrcode:before {
+  content: "\f029";
+}
+
+i.icon.barcode:before {
+  content: "\f02a";
+}
+
+i.icon.rss:before {
+  content: "\f09e";
+}
+
+i.icon.fork:before {
+  content: "\f126";
+}
+
+i.icon.html5:before {
+  content: "\f13b";
+}
+
+i.icon.css3:before {
+  content: "\f13c";
+}
+
+i.icon.rss.square:before {
+  content: "\f143";
+}
+
+i.icon.openid:before {
+  content: "\f19b";
+}
+
+i.icon.database:before {
+  content: "\f1c0";
+}
+
+i.icon.server:before {
+  content: "\f233";
+}
+
+i.icon.usb:before {
+  content: "\f287";
+}
+
+i.icon.bluetooth:before {
+  content: "\f293";
+}
+
+i.icon.bluetooth.alternative:before {
+  content: "\f294";
+}
+
+/* Rating */
+
+i.icon.heart:before {
+  content: "\f004";
+}
+
+i.icon.star:before {
+  content: "\f005";
+}
+
+i.icon.empty.star:before {
+  content: "\f006";
+}
+
+i.icon.thumbs.outline.up:before {
+  content: "\f087";
+}
+
+i.icon.thumbs.outline.down:before {
+  content: "\f088";
+}
+
+i.icon.star.half:before {
+  content: "\f089";
+}
+
+i.icon.empty.heart:before {
+  content: "\f08a";
+}
+
+i.icon.smile:before {
+  content: "\f118";
+}
+
+i.icon.frown:before {
+  content: "\f119";
+}
+
+i.icon.meh:before {
+  content: "\f11a";
+}
+
+i.icon.star.half.empty:before {
+  content: "\f123";
+}
+
+i.icon.thumbs.up:before {
+  content: "\f164";
+}
+
+i.icon.thumbs.down:before {
+  content: "\f165";
+}
+
+/* Audio */
+
+i.icon.music:before {
+  content: "\f001";
+}
+
+i.icon.video.play.outline:before {
+  content: "\f01d";
+}
+
+i.icon.volume.off:before {
+  content: "\f026";
+}
+
+i.icon.volume.down:before {
+  content: "\f027";
+}
+
+i.icon.volume.up:before {
+  content: "\f028";
+}
+
+i.icon.record:before {
+  content: "\f03d";
+}
+
+i.icon.step.backward:before {
+  content: "\f048";
+}
+
+i.icon.fast.backward:before {
+  content: "\f049";
+}
+
+i.icon.backward:before {
+  content: "\f04a";
+}
+
+i.icon.play:before {
+  content: "\f04b";
+}
+
+i.icon.pause:before {
+  content: "\f04c";
+}
+
+i.icon.stop:before {
+  content: "\f04d";
+}
+
+i.icon.forward:before {
+  content: "\f04e";
+}
+
+i.icon.fast.forward:before {
+  content: "\f050";
+}
+
+i.icon.step.forward:before {
+  content: "\f051";
+}
+
+i.icon.eject:before {
+  content: "\f052";
+}
+
+i.icon.unmute:before {
+  content: "\f130";
+}
+
+i.icon.mute:before {
+  content: "\f131";
+}
+
+i.icon.video.play:before {
+  content: "\f144";
+}
+
+i.icon.closed.captioning:before {
+  content: "\f20a";
+}
+
+i.icon.pause.circle:before {
+  content: "\f28b";
+}
+
+i.icon.pause.circle.outline:before {
+  content: "\f28c";
+}
+
+i.icon.stop.circle:before {
+  content: "\f28d";
+}
+
+i.icon.stop.circle.outline:before {
+  content: "\f28e";
+}
+
+/* Map, Locations, & Transportation */
+
+i.icon.marker:before {
+  content: "\f041";
+}
+
+i.icon.coffee:before {
+  content: "\f0f4";
+}
+
+i.icon.food:before {
+  content: "\f0f5";
+}
+
+i.icon.building.outline:before {
+  content: "\f0f7";
+}
+
+i.icon.hospital:before {
+  content: "\f0f8";
+}
+
+i.icon.emergency:before {
+  content: "\f0f9";
+}
+
+i.icon.first.aid:before {
+  content: "\f0fa";
+}
+
+i.icon.military:before {
+  content: "\f0fb";
+}
+
+i.icon.h:before {
+  content: "\f0fd";
+}
+
+i.icon.location.arrow:before {
+  content: "\f124";
+}
+
+i.icon.compass:before {
+  content: "\f14e";
+}
+
+i.icon.space.shuttle:before {
+  content: "\f197";
+}
+
+i.icon.university:before {
+  content: "\f19c";
+}
+
+i.icon.building:before {
+  content: "\f1ad";
+}
+
+i.icon.paw:before {
+  content: "\f1b0";
+}
+
+i.icon.spoon:before {
+  content: "\f1b1";
+}
+
+i.icon.car:before {
+  content: "\f1b9";
+}
+
+i.icon.taxi:before {
+  content: "\f1ba";
+}
+
+i.icon.tree:before {
+  content: "\f1bb";
+}
+
+i.icon.bicycle:before {
+  content: "\f206";
+}
+
+i.icon.bus:before {
+  content: "\f207";
+}
+
+i.icon.ship:before {
+  content: "\f21a";
+}
+
+i.icon.motorcycle:before {
+  content: "\f21c";
+}
+
+i.icon.street.view:before {
+  content: "\f21d";
+}
+
+i.icon.hotel:before {
+  content: "\f236";
+}
+
+i.icon.train:before {
+  content: "\f238";
+}
+
+i.icon.subway:before {
+  content: "\f239";
+}
+
+i.icon.map.pin:before {
+  content: "\f276";
+}
+
+i.icon.map.signs:before {
+  content: "\f277";
+}
+
+i.icon.map.outline:before {
+  content: "\f278";
+}
+
+i.icon.map:before {
+  content: "\f279";
+}
+
+/* Tables */
+
+i.icon.table:before {
+  content: "\f0ce";
+}
+
+i.icon.columns:before {
+  content: "\f0db";
+}
+
+i.icon.sort:before {
+  content: "\f0dc";
+}
+
+i.icon.sort.descending:before {
+  content: "\f0dd";
+}
+
+i.icon.sort.ascending:before {
+  content: "\f0de";
+}
+
+i.icon.sort.alphabet.ascending:before {
+  content: "\f15d";
+}
+
+i.icon.sort.alphabet.descending:before {
+  content: "\f15e";
+}
+
+i.icon.sort.contents.ascending:before {
+  content: "\f160";
+}
+
+i.icon.sort.contents.descending:before {
+  content: "\f161";
+}
+
+i.icon.sort.numeric.ascending:before {
+  content: "\f162";
+}
+
+i.icon.sort.numeric.descending:before {
+  content: "\f163";
+}
+
+/* Text Editor */
+
+i.icon.font:before {
+  content: "\f031";
+}
+
+i.icon.bold:before {
+  content: "\f032";
+}
+
+i.icon.italic:before {
+  content: "\f033";
+}
+
+i.icon.text.height:before {
+  content: "\f034";
+}
+
+i.icon.text.width:before {
+  content: "\f035";
+}
+
+i.icon.align.left:before {
+  content: "\f036";
+}
+
+i.icon.align.center:before {
+  content: "\f037";
+}
+
+i.icon.align.right:before {
+  content: "\f038";
+}
+
+i.icon.align.justify:before {
+  content: "\f039";
+}
+
+i.icon.list:before {
+  content: "\f03a";
+}
+
+i.icon.outdent:before {
+  content: "\f03b";
+}
+
+i.icon.indent:before {
+  content: "\f03c";
+}
+
+i.icon.linkify:before {
+  content: "\f0c1";
+}
+
+i.icon.cut:before {
+  content: "\f0c4";
+}
+
+i.icon.copy:before {
+  content: "\f0c5";
+}
+
+i.icon.attach:before {
+  content: "\f0c6";
+}
+
+i.icon.save:before {
+  content: "\f0c7";
+}
+
+i.icon.contents:before {
+  content: "\f0c9";
+}
+
+i.icon.unordered.list:before {
+  content: "\f0ca";
+}
+
+i.icon.ordered.list:before {
+  content: "\f0cb";
+}
+
+i.icon.strikethrough:before {
+  content: "\f0cc";
+}
+
+i.icon.underline:before {
+  content: "\f0cd";
+}
+
+i.icon.paste:before {
+  content: "\f0ea";
+}
+
+i.icon.unlinkify:before {
+  content: "\f127";
+}
+
+i.icon.superscript:before {
+  content: "\f12b";
+}
+
+i.icon.subscript:before {
+  content: "\f12c";
+}
+
+i.icon.header:before {
+  content: "\f1dc";
+}
+
+i.icon.paragraph:before {
+  content: "\f1dd";
+}
+
+i.icon.text.cursor:before {
+  content: "\f246";
+}
+
+/* Currency */
+
+i.icon.euro:before {
+  content: "\f153";
+}
+
+i.icon.pound:before {
+  content: "\f154";
+}
+
+i.icon.dollar:before {
+  content: "\f155";
+}
+
+i.icon.rupee:before {
+  content: "\f156";
+}
+
+i.icon.yen:before {
+  content: "\f157";
+}
+
+i.icon.ruble:before {
+  content: "\f158";
+}
+
+i.icon.won:before {
+  content: "\f159";
+}
+
+i.icon.bitcoin:before {
+  content: "\f15a";
+}
+
+i.icon.lira:before {
+  content: "\f195";
+}
+
+i.icon.shekel:before {
+  content: "\f20b";
+}
+
+/* Payment Options */
+
+i.icon.paypal:before {
+  content: "\f1ed";
+}
+
+i.icon.google.wallet:before {
+  content: "\f1ee";
+}
+
+i.icon.visa:before {
+  content: "\f1f0";
+}
+
+i.icon.mastercard:before {
+  content: "\f1f1";
+}
+
+i.icon.discover:before {
+  content: "\f1f2";
+}
+
+i.icon.american.express:before {
+  content: "\f1f3";
+}
+
+i.icon.paypal.content:before {
+  content: "\f1f4";
+}
+
+i.icon.stripe:before {
+  content: "\f1f5";
+}
+
+i.icon.japan.credit.bureau:before {
+  content: "\f24b";
+}
+
+i.icon.diners.club:before {
+  content: "\f24c";
+}
+
+i.icon.credit.content.alternative:before {
+  content: "\f283";
+}
+
+/* Networks and Websites*/
+
+i.icon.twitter.square:before {
+  content: "\f081";
+}
+
+i.icon.facebook.square:before {
+  content: "\f082";
+}
+
+i.icon.linkedin.square:before {
+  content: "\f08c";
+}
+
+i.icon.github.square:before {
+  content: "\f092";
+}
+
+i.icon.twitter:before {
+  content: "\f099";
+}
+
+i.icon.facebook.f:before {
+  content: "\f09a";
+}
+
+i.icon.github:before {
+  content: "\f09b";
+}
+
+i.icon.pinterest:before {
+  content: "\f0d2";
+}
+
+i.icon.pinterest.square:before {
+  content: "\f0d3";
+}
+
+i.icon.google.plus.square:before {
+  content: "\f0d4";
+}
+
+i.icon.google.plus:before {
+  content: "\f0d5";
+}
+
+i.icon.linkedin:before {
+  content: "\f0e1";
+}
+
+i.icon.github.alternate:before {
+  content: "\f113";
+}
+
+i.icon.maxcdn:before {
+  content: "\f136";
+}
+
+i.icon.youtube.square:before {
+  content: "\f166";
+}
+
+i.icon.youtube:before {
+  content: "\f167";
+}
+
+i.icon.xing:before {
+  content: "\f168";
+}
+
+i.icon.xing.square:before {
+  content: "\f169";
+}
+
+i.icon.youtube.play:before {
+  content: "\f16a";
+}
+
+i.icon.dropbox:before {
+  content: "\f16b";
+}
+
+i.icon.stack.overflow:before {
+  content: "\f16c";
+}
+
+i.icon.instagram:before {
+  content: "\f16d";
+}
+
+i.icon.flickr:before {
+  content: "\f16e";
+}
+
+i.icon.adn:before {
+  content: "\f170";
+}
+
+i.icon.bitbucket:before {
+  content: "\f171";
+}
+
+i.icon.bitbucket.square:before {
+  content: "\f172";
+}
+
+i.icon.tumblr:before {
+  content: "\f173";
+}
+
+i.icon.tumblr.square:before {
+  content: "\f174";
+}
+
+i.icon.apple:before {
+  content: "\f179";
+}
+
+i.icon.windows:before {
+  content: "\f17a";
+}
+
+i.icon.android:before {
+  content: "\f17b";
+}
+
+i.icon.linux:before {
+  content: "\f17c";
+}
+
+i.icon.dribble:before {
+  content: "\f17d";
+}
+
+i.icon.skype:before {
+  content: "\f17e";
+}
+
+i.icon.foursquare:before {
+  content: "\f180";
+}
+
+i.icon.trello:before {
+  content: "\f181";
+}
+
+i.icon.gittip:before {
+  content: "\f184";
+}
+
+i.icon.vk:before {
+  content: "\f189";
+}
+
+i.icon.weibo:before {
+  content: "\f18a";
+}
+
+i.icon.renren:before {
+  content: "\f18b";
+}
+
+i.icon.pagelines:before {
+  content: "\f18c";
+}
+
+i.icon.stack.exchange:before {
+  content: "\f18d";
+}
+
+i.icon.vimeo.square:before {
+  content: "\f194";
+}
+
+i.icon.slack:before {
+  content: "\f198";
+}
+
+i.icon.wordpress:before {
+  content: "\f19a";
+}
+
+i.icon.yahoo:before {
+  content: "\f19e";
+}
+
+i.icon.google:before {
+  content: "\f1a0";
+}
+
+i.icon.reddit:before {
+  content: "\f1a1";
+}
+
+i.icon.reddit.square:before {
+  content: "\f1a2";
+}
+
+i.icon.stumbleupon.circle:before {
+  content: "\f1a3";
+}
+
+i.icon.stumbleupon:before {
+  content: "\f1a4";
+}
+
+i.icon.delicious:before {
+  content: "\f1a5";
+}
+
+i.icon.digg:before {
+  content: "\f1a6";
+}
+
+i.icon.pied.piper:before {
+  content: "\f1a7";
+}
+
+i.icon.pied.piper.alternate:before {
+  content: "\f1a8";
+}
+
+i.icon.drupal:before {
+  content: "\f1a9";
+}
+
+i.icon.joomla:before {
+  content: "\f1aa";
+}
+
+i.icon.behance:before {
+  content: "\f1b4";
+}
+
+i.icon.behance.square:before {
+  content: "\f1b5";
+}
+
+i.icon.steam:before {
+  content: "\f1b6";
+}
+
+i.icon.steam.square:before {
+  content: "\f1b7";
+}
+
+i.icon.spotify:before {
+  content: "\f1bc";
+}
+
+i.icon.deviantart:before {
+  content: "\f1bd";
+}
+
+i.icon.soundcloud:before {
+  content: "\f1be";
+}
+
+i.icon.vine:before {
+  content: "\f1ca";
+}
+
+i.icon.codepen:before {
+  content: "\f1cb";
+}
+
+i.icon.jsfiddle:before {
+  content: "\f1cc";
+}
+
+i.icon.rebel:before {
+  content: "\f1d0";
+}
+
+i.icon.empire:before {
+  content: "\f1d1";
+}
+
+i.icon.git.square:before {
+  content: "\f1d2";
+}
+
+i.icon.git:before {
+  content: "\f1d3";
+}
+
+i.icon.hacker.news:before {
+  content: "\f1d4";
+}
+
+i.icon.tencent.weibo:before {
+  content: "\f1d5";
+}
+
+i.icon.qq:before {
+  content: "\f1d6";
+}
+
+i.icon.wechat:before {
+  content: "\f1d7";
+}
+
+i.icon.slideshare:before {
+  content: "\f1e7";
+}
+
+i.icon.twitch:before {
+  content: "\f1e8";
+}
+
+i.icon.yelp:before {
+  content: "\f1e9";
+}
+
+i.icon.lastfm:before {
+  content: "\f202";
+}
+
+i.icon.lastfm.square:before {
+  content: "\f203";
+}
+
+i.icon.ioxhost:before {
+  content: "\f208";
+}
+
+i.icon.angellist:before {
+  content: "\f209";
+}
+
+i.icon.meanpath:before {
+  content: "\f20c";
+}
+
+i.icon.buysellads:before {
+  content: "\f20d";
+}
+
+i.icon.connectdevelop:before {
+  content: "\f20e";
+}
+
+i.icon.dashcube:before {
+  content: "\f210";
+}
+
+i.icon.forumbee:before {
+  content: "\f211";
+}
+
+i.icon.leanpub:before {
+  content: "\f212";
+}
+
+i.icon.sellsy:before {
+  content: "\f213";
+}
+
+i.icon.shirtsinbulk:before {
+  content: "\f214";
+}
+
+i.icon.simplybuilt:before {
+  content: "\f215";
+}
+
+i.icon.skyatlas:before {
+  content: "\f216";
+}
+
+i.icon.facebook:before {
+  content: "\f230";
+}
+
+i.icon.pinterest:before {
+  content: "\f231";
+}
+
+i.icon.whatsapp:before {
+  content: "\f232";
+}
+
+i.icon.viacoin:before {
+  content: "\f237";
+}
+
+i.icon.medium:before {
+  content: "\f23a";
+}
+
+i.icon.y.combinator:before {
+  content: "\f23b";
+}
+
+i.icon.optinmonster:before {
+  content: "\f23c";
+}
+
+i.icon.opencart:before {
+  content: "\f23d";
+}
+
+i.icon.expeditedssl:before {
+  content: "\f23e";
+}
+
+i.icon.gg:before {
+  content: "\f260";
+}
+
+i.icon.gg.circle:before {
+  content: "\f261";
+}
+
+i.icon.tripadvisor:before {
+  content: "\f262";
+}
+
+i.icon.odnoklassniki:before {
+  content: "\f263";
+}
+
+i.icon.odnoklassniki.square:before {
+  content: "\f264";
+}
+
+i.icon.pocket:before {
+  content: "\f265";
+}
+
+i.icon.wikipedia:before {
+  content: "\f266";
+}
+
+i.icon.safari:before {
+  content: "\f267";
+}
+
+i.icon.chrome:before {
+  content: "\f268";
+}
+
+i.icon.firefox:before {
+  content: "\f269";
+}
+
+i.icon.opera:before {
+  content: "\f26a";
+}
+
+i.icon.internet.explorer:before {
+  content: "\f26b";
+}
+
+i.icon.contao:before {
+  content: "\f26d";
+}
+
+i.icon.\35 00px:before {
+  content: "\f26e";
+}
+
+i.icon.amazon:before {
+  content: "\f270";
+}
+
+i.icon.houzz:before {
+  content: "\f27c";
+}
+
+i.icon.vimeo:before {
+  content: "\f27d";
+}
+
+i.icon.black.tie:before {
+  content: "\f27e";
+}
+
+i.icon.fonticons:before {
+  content: "\f280";
+}
+
+i.icon.reddit.alien:before {
+  content: "\f281";
+}
+
+i.icon.microsoft.edge:before {
+  content: "\f282";
+}
+
+i.icon.codiepie:before {
+  content: "\f284";
+}
+
+i.icon.modx:before {
+  content: "\f285";
+}
+
+i.icon.fort.awesome:before {
+  content: "\f286";
+}
+
+i.icon.product.hunt:before {
+  content: "\f288";
+}
+
+i.icon.mixcloud:before {
+  content: "\f289";
+}
+
+i.icon.scribd:before {
+  content: "\f28a";
+}
+
+i.icon.gitlab:before {
+  content: "\f296";
+}
+
+i.icon.wpbeginner:before {
+  content: "\f297";
+}
+
+i.icon.wpforms:before {
+  content: "\f298";
+}
+
+i.icon.envira.gallery:before {
+  content: "\f299";
+}
+
+i.icon.glide:before {
+  content: "\f2a5";
+}
+
+i.icon.glide.g:before {
+  content: "\f2a6";
+}
+
+i.icon.viadeo:before {
+  content: "\f2a9";
+}
+
+i.icon.viadeo.square:before {
+  content: "\f2aa";
+}
+
+i.icon.snapchat:before {
+  content: "\f2ab";
+}
+
+i.icon.snapchat.ghost:before {
+  content: "\f2ac";
+}
+
+i.icon.snapchat.square:before {
+  content: "\f2ad";
+}
+
+i.icon.pied.piper.hat:before {
+  content: "\f2ae";
+}
+
+i.icon.first.order:before {
+  content: "\f2b0";
+}
+
+i.icon.yoast:before {
+  content: "\f2b1";
+}
+
+i.icon.themeisle:before {
+  content: "\f2b2";
+}
+
+i.icon.google.plus.circle:before {
+  content: "\f2b3";
+}
+
+i.icon.font.awesome:before {
+  content: "\f2b4";
+}
+
+/*******************************
+            Aliases
+*******************************/
+
+i.icon.like:before {
+  content: "\f004";
+}
+
+i.icon.favorite:before {
+  content: "\f005";
+}
+
+i.icon.video:before {
+  content: "\f008";
+}
+
+i.icon.check:before {
+  content: "\f00c";
+}
+
+i.icon.close:before {
+  content: "\f00d";
+}
+
+i.icon.cancel:before {
+  content: "\f00d";
+}
+
+i.icon.delete:before {
+  content: "\f00d";
+}
+
+i.icon.x:before {
+  content: "\f00d";
+}
+
+i.icon.zoom.in:before {
+  content: "\f00e";
+}
+
+i.icon.magnify:before {
+  content: "\f00e";
+}
+
+i.icon.shutdown:before {
+  content: "\f011";
+}
+
+i.icon.clock:before {
+  content: "\f017";
+}
+
+i.icon.time:before {
+  content: "\f017";
+}
+
+i.icon.play.circle.outline:before {
+  content: "\f01d";
+}
+
+i.icon.headphone:before {
+  content: "\f025";
+}
+
+i.icon.camera:before {
+  content: "\f030";
+}
+
+i.icon.video.camera:before {
+  content: "\f03d";
+}
+
+i.icon.picture:before {
+  content: "\f03e";
+}
+
+i.icon.pencil:before {
+  content: "\f040";
+}
+
+i.icon.compose:before {
+  content: "\f040";
+}
+
+i.icon.point:before {
+  content: "\f041";
+}
+
+i.icon.tint:before {
+  content: "\f043";
+}
+
+i.icon.signup:before {
+  content: "\f044";
+}
+
+i.icon.plus.circle:before {
+  content: "\f055";
+}
+
+i.icon.question.circle:before {
+  content: "\f059";
+}
+
+i.icon.dont:before {
+  content: "\f05e";
+}
+
+i.icon.minimize:before {
+  content: "\f066";
+}
+
+i.icon.add:before {
+  content: "\f067";
+}
+
+i.icon.exclamation.circle:before {
+  content: "\f06a";
+}
+
+i.icon.attention:before {
+  content: "\f06a";
+}
+
+i.icon.eye:before {
+  content: "\f06e";
+}
+
+i.icon.exclamation.triangle:before {
+  content: "\f071";
+}
+
+i.icon.shuffle:before {
+  content: "\f074";
+}
+
+i.icon.chat:before {
+  content: "\f075";
+}
+
+i.icon.cart:before {
+  content: "\f07a";
+}
+
+i.icon.shopping.cart:before {
+  content: "\f07a";
+}
+
+i.icon.bar.graph:before {
+  content: "\f080";
+}
+
+i.icon.key:before {
+  content: "\f084";
+}
+
+i.icon.cogs:before {
+  content: "\f085";
+}
+
+i.icon.discussions:before {
+  content: "\f086";
+}
+
+i.icon.like.outline:before {
+  content: "\f087";
+}
+
+i.icon.dislike.outline:before {
+  content: "\f088";
+}
+
+i.icon.heart.outline:before {
+  content: "\f08a";
+}
+
+i.icon.log.out:before {
+  content: "\f08b";
+}
+
+i.icon.thumb.tack:before {
+  content: "\f08d";
+}
+
+i.icon.winner:before {
+  content: "\f091";
+}
+
+i.icon.phone:before {
+  content: "\f095";
+}
+
+i.icon.bookmark.outline:before {
+  content: "\f097";
+}
+
+i.icon.phone.square:before {
+  content: "\f098";
+}
+
+i.icon.credit.content:before {
+  content: "\f09d";
+}
+
+i.icon.hdd.outline:before {
+  content: "\f0a0";
+}
+
+i.icon.bullhorn:before {
+  content: "\f0a1";
+}
+
+i.icon.bell.outline:before {
+  content: "\f0a2";
+}
+
+i.icon.hand.outline.right:before {
+  content: "\f0a4";
+}
+
+i.icon.hand.outline.left:before {
+  content: "\f0a5";
+}
+
+i.icon.hand.outline.up:before {
+  content: "\f0a6";
+}
+
+i.icon.hand.outline.down:before {
+  content: "\f0a7";
+}
+
+i.icon.globe:before {
+  content: "\f0ac";
+}
+
+i.icon.wrench:before {
+  content: "\f0ad";
+}
+
+i.icon.briefcase:before {
+  content: "\f0b1";
+}
+
+i.icon.group:before {
+  content: "\f0c0";
+}
+
+i.icon.linkify:before {
+  content: "\f0c1";
+}
+
+i.icon.chain:before {
+  content: "\f0c1";
+}
+
+i.icon.flask:before {
+  content: "\f0c3";
+}
+
+i.icon.sidebar:before {
+  content: "\f0c9";
+}
+
+i.icon.bars:before {
+  content: "\f0c9";
+}
+
+i.icon.list.ul:before {
+  content: "\f0ca";
+}
+
+i.icon.list.ol:before {
+  content: "\f0cb";
+}
+
+i.icon.numbered.list:before {
+  content: "\f0cb";
+}
+
+i.icon.magic:before {
+  content: "\f0d0";
+}
+
+i.icon.truck:before {
+  content: "\f0d1";
+}
+
+i.icon.currency:before {
+  content: "\f0d6";
+}
+
+i.icon.triangle.down:before {
+  content: "\f0d7";
+}
+
+i.icon.dropdown:before {
+  content: "\f0d7";
+}
+
+i.icon.triangle.up:before {
+  content: "\f0d8";
+}
+
+i.icon.triangle.left:before {
+  content: "\f0d9";
+}
+
+i.icon.triangle.right:before {
+  content: "\f0da";
+}
+
+i.icon.envelope:before {
+  content: "\f0e0";
+}
+
+i.icon.conversation:before {
+  content: "\f0e6";
+}
+
+i.icon.rain:before {
+  content: "\f0e9";
+}
+
+i.icon.clipboard:before {
+  content: "\f0ea";
+}
+
+i.icon.lightbulb:before {
+  content: "\f0eb";
+}
+
+i.icon.bell:before {
+  content: "\f0f3";
+}
+
+i.icon.ambulance:before {
+  content: "\f0f9";
+}
+
+i.icon.medkit:before {
+  content: "\f0fa";
+}
+
+i.icon.fighter.jet:before {
+  content: "\f0fb";
+}
+
+i.icon.beer:before {
+  content: "\f0fc";
+}
+
+i.icon.plus.square:before {
+  content: "\f0fe";
+}
+
+i.icon.computer:before {
+  content: "\f108";
+}
+
+i.icon.circle.outline:before {
+  content: "\f10c";
+}
+
+i.icon.gamepad:before {
+  content: "\f11b";
+}
+
+i.icon.star.half.full:before {
+  content: "\f123";
+}
+
+i.icon.broken.chain:before {
+  content: "\f127";
+}
+
+i.icon.question:before {
+  content: "\f128";
+}
+
+i.icon.exclamation:before {
+  content: "\f12a";
+}
+
+i.icon.eraser:before {
+  content: "\f12d";
+}
+
+i.icon.microphone:before {
+  content: "\f130";
+}
+
+i.icon.microphone.slash:before {
+  content: "\f131";
+}
+
+i.icon.shield:before {
+  content: "\f132";
+}
+
+i.icon.target:before {
+  content: "\f140";
+}
+
+i.icon.play.circle:before {
+  content: "\f144";
+}
+
+i.icon.pencil.square:before {
+  content: "\f14b";
+}
+
+i.icon.eur:before {
+  content: "\f153";
+}
+
+i.icon.gbp:before {
+  content: "\f154";
+}
+
+i.icon.usd:before {
+  content: "\f155";
+}
+
+i.icon.inr:before {
+  content: "\f156";
+}
+
+i.icon.cny:before {
+  content: "\f157";
+}
+
+i.icon.rmb:before {
+  content: "\f157";
+}
+
+i.icon.jpy:before {
+  content: "\f157";
+}
+
+i.icon.rouble:before {
+  content: "\f158";
+}
+
+i.icon.rub:before {
+  content: "\f158";
+}
+
+i.icon.krw:before {
+  content: "\f159";
+}
+
+i.icon.btc:before {
+  content: "\f15a";
+}
+
+i.icon.gratipay:before {
+  content: "\f184";
+}
+
+i.icon.zip:before {
+  content: "\f187";
+}
+
+i.icon.dot.circle.outline:before {
+  content: "\f192";
+}
+
+i.icon.try:before {
+  content: "\f195";
+}
+
+i.icon.graduation:before {
+  content: "\f19d";
+}
+
+i.icon.circle.outline:before {
+  content: "\f1db";
+}
+
+i.icon.sliders:before {
+  content: "\f1de";
+}
+
+i.icon.weixin:before {
+  content: "\f1d7";
+}
+
+i.icon.tty:before {
+  content: "\f1e4";
+}
+
+i.icon.teletype:before {
+  content: "\f1e4";
+}
+
+i.icon.binoculars:before {
+  content: "\f1e5";
+}
+
+i.icon.power.cord:before {
+  content: "\f1e6";
+}
+
+i.icon.wi-fi:before {
+  content: "\f1eb";
+}
+
+i.icon.visa.content:before {
+  content: "\f1f0";
+}
+
+i.icon.mastercard.content:before {
+  content: "\f1f1";
+}
+
+i.icon.discover.content:before {
+  content: "\f1f2";
+}
+
+i.icon.amex:before {
+  content: "\f1f3";
+}
+
+i.icon.american.express.content:before {
+  content: "\f1f3";
+}
+
+i.icon.stripe.content:before {
+  content: "\f1f5";
+}
+
+i.icon.bell.slash:before {
+  content: "\f1f6";
+}
+
+i.icon.bell.slash.outline:before {
+  content: "\f1f7";
+}
+
+i.icon.area.graph:before {
+  content: "\f1fe";
+}
+
+i.icon.pie.graph:before {
+  content: "\f200";
+}
+
+i.icon.line.graph:before {
+  content: "\f201";
+}
+
+i.icon.cc:before {
+  content: "\f20a";
+}
+
+i.icon.sheqel:before {
+  content: "\f20b";
+}
+
+i.icon.ils:before {
+  content: "\f20b";
+}
+
+i.icon.plus.cart:before {
+  content: "\f217";
+}
+
+i.icon.arrow.down.cart:before {
+  content: "\f218";
+}
+
+i.icon.detective:before {
+  content: "\f21b";
+}
+
+i.icon.venus:before {
+  content: "\f221";
+}
+
+i.icon.mars:before {
+  content: "\f222";
+}
+
+i.icon.mercury:before {
+  content: "\f223";
+}
+
+i.icon.intersex:before {
+  content: "\f224";
+}
+
+i.icon.venus.double:before {
+  content: "\f226";
+}
+
+i.icon.female.homosexual:before {
+  content: "\f226";
+}
+
+i.icon.mars.double:before {
+  content: "\f227";
+}
+
+i.icon.male.homosexual:before {
+  content: "\f227";
+}
+
+i.icon.venus.mars:before {
+  content: "\f228";
+}
+
+i.icon.mars.stroke:before {
+  content: "\f229";
+}
+
+i.icon.mars.alternate:before {
+  content: "\f229";
+}
+
+i.icon.mars.vertical:before {
+  content: "\f22a";
+}
+
+i.icon.mars.stroke.vertical:before {
+  content: "\f22a";
+}
+
+i.icon.mars.horizontal:before {
+  content: "\f22b";
+}
+
+i.icon.mars.stroke.horizontal:before {
+  content: "\f22b";
+}
+
+i.icon.asexual:before {
+  content: "\f22d";
+}
+
+i.icon.facebook.official:before {
+  content: "\f230";
+}
+
+i.icon.user.plus:before {
+  content: "\f234";
+}
+
+i.icon.user.times:before {
+  content: "\f235";
+}
+
+i.icon.user.close:before {
+  content: "\f235";
+}
+
+i.icon.user.cancel:before {
+  content: "\f235";
+}
+
+i.icon.user.delete:before {
+  content: "\f235";
+}
+
+i.icon.user.x:before {
+  content: "\f235";
+}
+
+i.icon.bed:before {
+  content: "\f236";
+}
+
+i.icon.yc:before {
+  content: "\f23b";
+}
+
+i.icon.ycombinator:before {
+  content: "\f23b";
+}
+
+i.icon.battery.four:before {
+  content: "\f240";
+}
+
+i.icon.battery.three:before {
+  content: "\f241";
+}
+
+i.icon.battery.three.quarters:before {
+  content: "\f241";
+}
+
+i.icon.battery.two:before {
+  content: "\f242";
+}
+
+i.icon.battery.half:before {
+  content: "\f242";
+}
+
+i.icon.battery.one:before {
+  content: "\f243";
+}
+
+i.icon.battery.quarter:before {
+  content: "\f243";
+}
+
+i.icon.battery.zero:before {
+  content: "\f244";
+}
+
+i.icon.i.cursor:before {
+  content: "\f246";
+}
+
+i.icon.jcb:before {
+  content: "\f24b";
+}
+
+i.icon.japan.credit.bureau.content:before {
+  content: "\f24b";
+}
+
+i.icon.diners.club.content:before {
+  content: "\f24c";
+}
+
+i.icon.balance:before {
+  content: "\f24e";
+}
+
+i.icon.hourglass.outline:before {
+  content: "\f250";
+}
+
+i.icon.hourglass.zero:before {
+  content: "\f250";
+}
+
+i.icon.hourglass.one:before {
+  content: "\f251";
+}
+
+i.icon.hourglass.two:before {
+  content: "\f252";
+}
+
+i.icon.hourglass.three:before {
+  content: "\f253";
+}
+
+i.icon.hourglass.four:before {
+  content: "\f254";
+}
+
+i.icon.grab:before {
+  content: "\f255";
+}
+
+i.icon.hand.victory:before {
+  content: "\f25b";
+}
+
+i.icon.tm:before {
+  content: "\f25c";
+}
+
+i.icon.r.circle:before {
+  content: "\f25d";
+}
+
+i.icon.television:before {
+  content: "\f26c";
+}
+
+i.icon.five.hundred.pixels:before {
+  content: "\f26e";
+}
+
+i.icon.calendar.plus:before {
+  content: "\f271";
+}
+
+i.icon.calendar.minus:before {
+  content: "\f272";
+}
+
+i.icon.calendar.times:before {
+  content: "\f273";
+}
+
+i.icon.calendar.check:before {
+  content: "\f274";
+}
+
+i.icon.factory:before {
+  content: "\f275";
+}
+
+i.icon.commenting:before {
+  content: "\f27a";
+}
+
+i.icon.commenting.outline:before {
+  content: "\f27b";
+}
+
+i.icon.edge:before {
+  content: "\f282";
+}
+
+i.icon.ms.edge:before {
+  content: "\f282";
+}
+
+i.icon.wordpress.beginner:before {
+  content: "\f297";
+}
+
+i.icon.wordpress.forms:before {
+  content: "\f298";
+}
+
+i.icon.envira:before {
+  content: "\f299";
+}
+
+i.icon.question.circle.outline:before {
+  content: "\f29c";
+}
+
+i.icon.assistive.listening.devices:before {
+  content: "\f2a2";
+}
+
+i.icon.als:before {
+  content: "\f2a2";
+}
+
+i.icon.ald:before {
+  content: "\f2a2";
+}
+
+i.icon.asl.interpreting:before {
+  content: "\f2a3";
+}
+
+i.icon.deaf:before {
+  content: "\f2a4";
+}
+
+i.icon.american.sign.language.interpreting:before {
+  content: "\f2a3";
+}
+
+i.icon.hard.of.hearing:before {
+  content: "\f2a4";
+}
+
+i.icon.signing:before {
+  content: "\f2a7";
+}
+
+i.icon.new.pied.piper:before {
+  content: "\f2ae";
+}
+
+i.icon.theme.isle:before {
+  content: "\f2b2";
+}
+
+i.icon.google.plus.official:before {
+  content: "\f2b3";
+}
+
+i.icon.fa:before {
+  content: "\f2b4";
+}
+
+/*- COLOR -*/
+.yellow.icon{
+  color: rgb(255, 255, 51) !important;
+}
+
+.blue.icon{
+  color: #2185D0 !important;
+}
+
+.teal.icon{
+  color: rgb(133, 224, 224) !important;
+}
+
+.green.icon{
+  color: rgb(71, 209, 71) !important;
+}
+
+.red.icon{
+  color: #DB2828 !important;
+}
+
+.pink.icon{
+  color: rgb(255, 128, 213) !important;
+}
+
+.orange.icon{
+  color: rgb(247, 179, 110) !important;
+}
+
+.gray.icon{
+  color: rgb(217, 217, 217) !important;
+}
+
+/*****************************************
+* Blurbs Text (Paragraf)
+* #prag
+* Film : The Hobbit (smuge desolation)
+* Rubi Jihantoro
+******************************************/
+.bb.prag{
+  margin: 0em 0em 1em;
+  font-size: 14px;
+  line-height: 1.4285em;
+  text-decoration: none;
+  display: block;
+}
+/********************
+	   Aligment
+*********************/
+/* left aligned */
+p.bb[class*="left-aligned"].prag{
+	text-align: left;
+}
+/* right aligned */
+p.bb[class*="right-aligned"].prag{
+	text-align: right;
+}
+/* middle aligned */
+p.bb[class*="middle-aligned"].prag{
+	text-align: center;
+}
+/* justify */
+p.bb[class*="justify"].prag{
+	text-align: justify;
+}
+
+/*********************
+	Transformation
+**********************/
+p.bb[class*="up"].prag{
+    text-transform: uppercase;
+}
+
+p.bb[class*="low"].prag{
+    text-transform: lowercase;
+}
+
+p.bb[class*="cap"].prag{
+    text-transform: capitalize;
+}
+/********************
+		Indent
+*********************/
+p.bb[class*="indent"].prag{
+	 text-indent: 5% !important;
+}
+
+/********************
+	First Letter
+*********************/
+p.bb[class*="fl"].prag::first-letter{
+    color: #666666;
+    font-size:150%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*******************
+	    SIZE
+********************/
+p.bb[class*="mini"].prag{
+	font-size: 0.650rem;
+	margin: 0 5px;
+	word-spacing: 3;
+}
+p.bb[class*="tiny"].prag{
+	font-size: 0.850rem;
+	margin: 0 2px;
+}
+p.bb[class*="normal"].prag{
+	font-size: 1.150rem;
+	margin: 0 2px;
+}
+p.bb[class*="big"].prag{
+	font-size: 1.550rem;
+	margin: 0 2px;
+}
+p.bb[class*="huge"].prag{
+	font-size: 1.950rem;
+	word-spacing: -3;
+	margin: 0 2px;
+}
+p.bb[class*="massive"].prag{
+	font-size: 2.350rem;
+	margin: 0 2px;
+}
+
+/*****************
+	  Marker
+******************/
+i.yellow-marker{
+	background-color: rgb(255, 255, 26);
+	font-style: normal;
+}
+i.blue-marker{
+	background-color: rgb(127, 212, 255);
+	font-style: normal;
+}
+i.teal-marker{
+	background-color: rgb(133, 224, 224);
+	font-style: normal;
+}
+i.green-marker{
+	background-color: rgb(56, 148, 105);
+	font-style: normal;
+}
+i.red-marker{
+	background-color: rgb(255, 102, 102);
+	font-style: normal;
+}
+i.pink-marker{
+	background-color: rgb(255, 128, 213);
+	font-style: normal;
+}
+i.orange-marker{
+	background-color: rgb(247, 179, 110);
+	font-style: normal;
+}
+i.gray-marker{
+	background-color: rgb(217, 217, 217);
+	font-style: normal;
+}
+/**********************
+     Inverted Marker
+***********************/
+i.inverted-yellow-marker {
+    border: 1px solid rgb(255, 255, 128);
+    border-radius: 5px;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-yellow-marker:hover {
+    background-color: rgb(255, 255, 128);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+i.inverted-blue-marker {
+    border: 1px solid rgb(51, 204, 255);
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-blue-marker:hover {
+    background-color: rgb(51, 204, 255);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+i.inverted-teal-marker {
+    border: 1px solid rgb(116, 216, 207);
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-teal-marker:hover {
+    background-color: rgb(116, 216, 207);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+i.inverted-green-marker {
+    border: 1px solid rgb(102, 255, 102);
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-green-marker:hover {
+    background-color: rgb(102, 255, 102);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+i.inverted-red-marker {
+    border: 1px solid rgb(255, 77, 77);
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-red-marker:hover {
+    background-color: rgb(255, 77, 77);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+i.inverted-pink-marker {
+    border: 1px solid rgb(254, 103, 226);
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-pink-marker:hover {
+    background-color: rgb(254, 103, 226);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-orange-marker {
+    border: 1px solid rgb(255, 153, 102);
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-orange-marker:hover {
+    background-color: rgb(255, 153, 102);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-gray-marker {
+    border: 1px solid rgb(179, 179, 179);
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+i.inverted-gray-marker:hover {
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+   	font-style: normal;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+/******************************************
+*	Blurbs Label
+*	#label
+* Rubi Jihantoro
+*******************************************/
+.bb.label{
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
+  margin: 0em 0.14285714em;
+  background-color: #E8E8E8;
+  background-image: none;
+  padding: 0.5833em 0.833em;
+  color: #FFFFFF;
+  text-transform: none;
+  font-weight: bold;
+  border: 0px solid transparent;
+  border-radius: 0.28571429rem;
+  -webkit-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+}
+
+.bb.label:hover{
+  background-color: rgb(217, 217, 217);
+}
+
+/*******************************
+             Types
+*******************************/
+
+.bb.image.label {
+  width: auto !important;
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+  max-width: 9999px !important;
+  vertical-align: baseline !important;
+  text-transform: none !important;
+  background: #E8E8E8 !important;
+  padding: 0.5833em 0.933em 0.5833em 0.5em !important;
+  border-radius: 0.28571429rem !important;
+  box-shadow: none !important;
+}
+
+.bb.image.label img {
+  display: inline-block !important;
+  vertical-align: top !important;
+  height: 2.1666em !important;
+  margin: -0.5833em 0.5em -0.5833em -0.5em !important;
+  border-radius: 0.28571429rem 0em 0em 0.28571429rem !important;
+}
+
+.bb.image.label:hover{
+  background-color: rgb(217, 217, 217) !important;
+}
+
+.bb.link.label{
+  cursor: pointer !important;
+}
+
+/*******************
+	Label Sizing
+********************/
+.bb.mini.label{
+	font-size: 0.625em !important;
+}
+.bb.tiny.label{
+	font-size: 0.75em !important;
+}
+.bb.big.label{
+	font-size: 20px !important;
+}
+.bb.huge.label{
+	font-size: 25px !important;
+}
+.bb.massive.label{
+	font-size: 30px !important;
+}
+/*****************
+	Label Color
+******************/
+/* 	YELLOW  */
+.yellow.bb.label,
+.bb.label.yellow,
+.bb[class*="yellow"].label{
+	color: #FFFFFF !important;
+	background-color: rgb(255, 204, 51) !important;
+}
+.yellow.bb.label:hover,
+.bb.label.yellow:hover,
+.bb[class*="yellow"].label:hover{
+  color: #FFFFFF !important;
+	background-color: rgb(255, 191, 0) !important;
+	/*box-shadow: 0 0 2px rgba(35, 173, 278, 1);*/
+}
+
+/*	 BLUE  */
+.blue.bb.label,
+.bb.label.blue,
+.bb[class*="blue"].label{
+  color: #FFFFFF !important;
+	background-color: rgb(0, 149, 230) !important;
+}
+.blue.bb.label:hover,
+.bb.label.blue:hover,
+.bb[class*="blue"].label:hover{
+	background-color: rgb(0, 133, 204) !important;
+}
+
+/*	TEAL  */
+.teal.bb.label,
+.bb.label.teal,
+.bb[class*="teal"].label{
+  color: #FFFFFF !important;
+	background-color: rgb(96, 210, 201) !important;
+}
+.teal.bb.label:hover,
+.bb.label.teal:hover,
+.bb[class*="teal"].label:hover{
+	background-color: rgb(56, 199, 187) !important;
+}
+
+/* 	GREEN  */
+.green.bb.label,
+.bb.label.green,
+.bb[class*="green"].label{
+  color: #FFFFFF !important;
+	background-color: rgb(38, 217, 80) !important;
+}
+.green.bb.label:hover,
+.bb.label.green:hover,
+.bb[class*="green"].label:hover{
+	background-color: rgb(34, 195, 72) !important;
+}
+
+/*	RED */
+.red.bb.label,
+.bb.label.red,
+.bb[class*="red"].label{
+  color: #FFFFFF !important;
+  background-color: rgb(255, 51, 51) !important;
+}
+.red.bb.label:hover,
+.bb.label.red:hover,
+.bb[class*="red"].label:hover{
+  background-color: rgb(255, 0, 0) !important;
+}
+/*	PINK */
+.pink.bb.label,
+.bb.label.pink,
+.bb[class*="pink"].label{
+  color: #FFFFFF !important;
+	background-color: rgb(227, 79, 163) !important;
+}
+.pink.bb.label:hover,
+.bb.label.pink:hover,
+.bb[class*="pink"].label:hover{
+  background-color: rgb(224, 56, 151) !important;
+}
+
+/*	ORANGE */
+.orange.bb.label,
+.bb.label.orange,
+.bb[class*="orange"].label{
+  color: #FFFFFF !important;
+	background-color: rgb(255, 153, 51) !important;
+}
+.orange.bb.label:hover,
+.bb.label.orange:hover,
+.bb[class*="orange"].label:hover{
+	background-color: rgb(255, 140, 26) !important;
+}
+
+/*	GRAY  */
+.gray.bb.label,
+.bb.label.gray,
+.bb[class*="gray"].label{
+  color: #FFFFFF !important;
+	background-color: rgb(179, 179, 179) !important;
+}
+
+.gray.bb.label:hover,
+.bb.label.gray:hover,
+.bb[class*="gray"].label:hover{
+	background-color: rgb(153, 153, 153) !important;
+}
+
+/****************************************
+* Blurbs Button
+* #btn
+*
+* Rubi Jihantoro
+*****************************************/
+.bb.btn{
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(217, 217, 217);
+    border: 2px solid transparent;
+    color: white;
+    padding: 8px 20px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.bb.btn:hover{
+  background-color: rgb(204, 204, 204);
+}
+
+/* TYPES */
+.bb.disabled.btn{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.bb.flat.btn{
+  border-radius: 0px;
+}
+
+.bb.circle.btn{
+  border-radius: 240px;
+  width:100px;
+  line-height:100px;
+  height:100px;
+  padding:0;
+  border-width:4px;
+}
+
+.bb.basic.btn{
+  color: rgb(140, 140, 140) !important;
+  font-weight: normal !important;
+  background: transparent none !important;
+  border: 2px solid #E1E1E1 !important;
+}
+
+.bb.basic.item.btn{
+  color: rgb(140, 140, 140) !important;
+  font-weight: normal !important;
+  background: transparent none !important;
+  border: 2px solid #E1E1E1 !important;
+}
+
+.bb.basic.btn:hover{
+  color: rgb(102, 102, 102) !important;
+  border-color: rgb(217, 217, 217) !important;
+  box-shadow: 0 0 2px #E1E1E1 !important;
+}
+
+.right-icon.btn > .icon,
+.bb.right-icon.btn > .icon {
+  opacity: 0.9;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: -7px;
+  vertical-align: top;
+}
+
+.icon.btn,
+.bb.icon.btn{
+  padding: 0.78571429em 0.78571429em 0.78571429em;
+}
+
+.icon.btn > .icon,
+.bb.icon.btn > .icon {
+  opacity: 0.9;
+  font-size: 18px !important;
+  margin: 0em;
+  vertical-align: top;
+}
+
+.bb.double.btn{
+  background: transparent none !important;
+  display: inline-block;
+}
+
+.bb.double.btn > .btn:first-child{
+  border-radius: 4px 0px 0px 4px;
+  margin: 0px -2px;
+}
+
+.bb.double.btn > .btn:last-child{
+  border-radius: 0px 4px 4px 0px;
+  margin: 0px -2px;
+}
+
+.bb.rounded.btn:not(.circle){
+  border-radius: 20px !important;
+}
+/* WIDTH SIZE */
+.bb.fluid:not([class*="circle"]).btn{
+  width: 100%;
+}
+
+/* COLOR */
+.bb.blue.btn:not([class*="basic"]){
+  color: white !important;
+  background-color: rgb(65, 131, 215) !important;
+}
+
+.bb.blue.btn:not([class*="basic"]):hover{
+  background-color: rgb(45, 116, 210) !important;
+}
+
+.bb.basic.rounded.blue.btn,
+.bb.basic.blue.btn{
+  border-color: rgb(87, 144, 219) !important;
+  color: rgb(87, 144, 219) !important;
+  font-weight: bold !important;
+  background: transparent none !important;
+}
+
+.bb.basic.rounded.blue.btn:hover,
+.bb.basic.blue.btn:hover{
+  border-color: rgb(45, 116, 210) !important;
+  color: rgb(45, 116, 210) !important;
+  box-shadow: 0 0 1px rgb(45, 116, 210) !important;
+}
+
+.bb.basic.rounded.inverted.blue.btn:hover,
+.bb.blue.inverted.basic.flat.btn:hover,
+.bb.blue.inverted.btn:hover{
+  background-color: rgb(45, 116, 210) !important;
+  color: white !important;
+}
+
+.bb.blue.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(45, 116, 210) !important;
+  color: rgb(45, 116, 210) !important;
+  background: transparent none !important;
+}
+
+/*-yellow-*/
+.bb.yellow.btn:not([class*="basic"]){
+  background-color: rgb(252, 202, 54) !important;
+  color: #FFFFFF !important;
+}
+
+.bb.yellow.btn:not([class*="basic"]):hover{
+  background-color: rgb(251, 189, 4) !important;
+}
+
+.bb.basic.rounded.yellow.btn,
+.bb.basic.yellow.btn{
+  border-color: rgb(252, 202, 54) !important;
+  color: rgb(252, 202, 54) !important;
+  font-weight: bold !important;
+  background: transparent none !important;
+}
+
+.bb.basic.rounded.yellow.btn:hover,
+.bb.basic.yellow.btn:hover{
+  border-color: rgb(251, 189, 4) !important;
+  color: rgb(251, 189, 4) !important;
+  box-shadow: 0 0 1px rgb(251, 189, 4) !important;
+  background: transparent none !important;
+}
+
+.bb.basic.rounded.inverted.yellow.btn:hover,
+.bb.basic.rounded.inverted.yellow.flat.btn:hover,
+.bb.yellow.inverted.basic.flat.btn:hover,
+.bb.yellow.inverted.btn:hover{
+  background-color: rgb(251, 189, 4) !important;
+  color: white !important;
+}
+
+.bb.yellow.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(251, 189, 4) !important;
+  color: rgb(251, 189, 4) !important;
+  background: transparent none !important;
+}
+/*-teal-*/
+.bb.teal.btn:not([class*="basic"]){
+  background-color: rgb(96, 210, 201) !important;
+  color: #FFFFFF !important;
+  text-shadow: none !important;
+}
+.bb.teal.btn:not([class*="basic"]):hover{
+  background-color: rgb(56, 199, 187) !important;
+}
+
+.bb.basic.teal.rounded.btn,
+.bb.basic.teal.btn{
+  border-color: rgb(96, 210, 201) !important;
+  color: rgb(96, 210, 201) !important;
+  font-weight: bold !important;
+  background: transparent none !important;
+}
+.bb.basic.teal.rounded.btn:hover,
+.bb.basic.teal.btn:hover{
+  border-color: rgb(56, 199, 187) !important;
+  color: rgb(56, 199, 187) !important;
+  box-shadow: 0 0 1px rgb(56, 199, 187) !important;
+}
+
+.bb.basic.teal.rounded.inverted.btn:hover,
+.bb.teal.inverted.basic.flat.btn:hover,
+.bb.teal.inverted.btn:hover{
+  background-color: rgb(56, 199, 187) !important;
+  color: white !important;
+}
+
+.bb.teal.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(56, 199, 187) !important;
+  color: rgb(56, 199, 187) !important;
+  background: transparent none !important;
+}
+/*-green-*/
+.bb.green.btn:not([class*="basic"]){
+  background-color: rgb(70, 185, 131) !important;
+  color: #FFFFFF !important;
+  text-shadow: none !important;
+}
+.bb.green.btn:not([class*="basic"]):hover{
+  background-color: rgb(89, 192, 144) !important;
+}
+
+.bb.basic.green.rounded.btn,
+.bb.basic.green.btn{
+  background: transparent none !important;
+  border-color: rgb(0, 204, 51) !important;
+  color: rgb(0, 204, 51) !important;
+  font-weight: bold !important;
+}
+
+.bb.basic.green.rounded.btn:hover,
+.bb.basic.green.btn:hover{
+  border-color: rgb(0, 179, 45) !important;
+  color: rgb(0, 179, 45) !important;
+  box-shadow: 0 0 1px rgb(0, 179, 45) !important;
+}
+
+.bb.basic.green.rounded.inverted.btn:hover,
+.bb.green.inverted.basic.flat.btn:hover,
+.bb.green.inverted.btn:hover{
+  background-color: rgb(0, 179, 45) !important;
+  color: white !important;
+}
+
+.bb.green.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(0, 179, 45) !important;
+  color: rgb(0, 179, 45) !important;
+  background: transparent none !important;
+}
+/*-red-*/
+.bb.red.btn:not([class*="basic"]){
+  background-color: rgb(255, 102, 102) !important;
+  color: #FFFFFF !important;
+  text-shadow: none !important;
+}
+
+.bb.red.btn:not([class*="basic"]):hover{
+  background-color: rgb(255, 77, 77) !important;
+}
+
+.bb.basic.red.rounded.btn,
+.bb.basic.red.btn{
+  background: transparent none !important;
+  border-color: rgb(255, 102, 102) !important;
+  color: rgb(255, 102, 102) !important;
+  font-weight: bold !important;
+}
+
+.bb.basic.red.rounded.btn:hover,
+.bb.basic.red.btn:hover{
+  border-color: rgb(255, 77, 77) !important;
+  color: rgb(255, 77, 77) !important;
+  box-shadow: 0 0 1px rgb(255, 77, 77) !important;
+}
+
+.bb.basic.red.rounded.inverted.btn:hover,
+.bb.red.inverted.basic.flat.btn:hover,
+.bb.red.inverted.btn:hover{
+  background-color: rgb(255, 77, 77) !important;
+  color: white !important;
+}
+
+.bb.red.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(255, 77, 77) !important;
+  color: rgb(255, 77, 77) !important;
+  background: transparent none !important;
+}
+/*-pink-*/
+.bb.pink.btn:not([class*="basic"]){
+  background-color: rgb(227, 79, 163) !important;
+  color: #FFFFFF !important;
+  text-shadow: none !important;
+}
+
+.bb.pink.btn:not([class*="basic"]):hover{
+  background-color: rgb(221, 34, 140) !important;
+}
+
+.bb.basic.pink.rounded.btn,
+.bb.basic.pink.btn{
+  background: transparent none !important;
+  border-color: rgb(227, 79, 163) !important;
+  color: rgb(227, 79, 163) !important;
+  font-weight: bold !important;
+}
+
+.bb.basic.pink.rounded.btn:hover,
+.bb.basic.pink.btn:hover{
+  border-color: rgb(221, 34, 140) !important;
+  color: rgb(221, 34, 140) !important;
+  box-shadow: 0 0 1px rgb(221, 34, 140) !important;
+}
+
+.bb.basic.pink.rounded.inverted.btn:hover,
+.bb.pink.inverted.basic.flat.btn:hover,
+.bb.pink.inverted.btn:hover{
+  background-color: rgb(221, 34, 140) !important;
+  color: white !important;
+}
+
+.bb.pink.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(221, 34, 140) !important;
+  color: rgb(221, 34, 140) !important;
+  background: transparent none !important;
+}
+
+/*-orange-*/
+.bb.orange.btn:not([class*="basic"]){
+  background-color: rgb(255, 146, 51) !important;
+  color: #FFFFFF !important;
+  text-shadow: none !important;
+}
+
+.bb.orange.btn:not([class*="basic"]):hover{
+  background-color: rgb(255, 119, 0) !important;
+}
+
+.bb.basic.rounded.orange.btn,
+.bb.basic.orange.btn{
+  background: transparent none !important;
+  border-color: rgb(255, 146, 51) !important;
+  color: rgb(255, 146, 51) !important;
+  font-weight: bold !important;
+}
+
+.bb.basic.rounded.orange.btn:hover,
+.bb.basic.orange.btn:hover{
+  border-color: rgb(255, 119, 0) !important;
+  color: rgb(255, 119, 0) !important;
+  box-shadow: 0 0 1px rgb(255, 119, 0) !important;
+}
+
+.bb.basic.rounded.orange.inverted.btn:hover,
+.bb.orange.inverted.basic.flat.btn:hover,
+.bb.orange.inverted.btn:hover{
+  background-color: rgb(255, 119, 0) !important;
+  color: white !important;
+}
+
+.bb.orange.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(255, 119, 0) !important;
+  color: rgb(255, 119, 0) !important;
+  background: transparent none !important;
+}
+
+/*-gray-*/
+.bb.gray.btn:not([class*="basic"]){
+  background-color: rgb(153, 153, 153) !important;
+  color: #FFFFFF !important;
+  text-shadow: none !important;
+}
+
+.bb.gray.btn:not([class*="basic"]):hover{
+  background-color: rgb(128, 128, 128) !important;
+}
+
+.bb.basic.rounded.gray.btn,
+.bb.basic.gray.btn{
+  background: transparent none !important;
+  border-color: rgb(153, 153, 153) !important;
+  color: rgb(153, 153, 153) !important;
+  font-weight: bold !important;
+}
+
+.bb.basic.rounded.gray.btn:hover,
+.bb.basic.gray.btn:hover{
+  border-color: rgb(128, 128, 128) !important;
+  color: rgb(128, 128, 128) !important;
+  box-shadow: 0 0 1px rgb(128, 128, 128) !important;
+}
+
+.bb.basic.rounded.gray.inverted.btn:hover,
+.bb.gray.inverted.basic.flat.btn:hover,
+.bb.gray.inverted.btn:hover{
+  background-color: rgb(128, 128, 128) !important;
+  color: white !important;
+}
+
+.bb.gray.inverted[class*="flat"].btn:hover{
+  border: 2px solid rgb(128, 128, 128) !important;
+  color: rgb(128, 128, 128) !important;
+  background: transparent none !important;
+}
+
+/* SPACE */
+.bb.primary.btn{
+  background-color: #0275d8 !important;
+  color: white !important;
+}
+.bb.primary.btn:hover{
+  background-color: #0388fc !important;
+}
+.bb.primary.basic.rounded.btn{
+  background: transparent none !important;
+  color: #0275d8 !important;
+  border: 2px solid #0275d8 !important;
+}
+.bb.primary.basic.rounded.btn:hover{
+  color: #0388fc !important;
+  border: 2px solid #0388fc !important;
+  box-shadow: 1px 1px #0388fc !important;
+}
+
+.bb.info.btn{
+  background-color: #5BC0DE !important;
+  color: white !important;
+}
+.bb.info.btn:hover{
+  background-color: #6bc5e1 !important;
+}
+
+
+.bb.success.btn{
+  background-color: #44B480 !important;
+  color: white !important;
+}
+.bb.success.btn:hover{
+  background-color: #46b983 !important;
+}
+
+.bb.warning.btn{
+  background-color: #F0AD4E !important;
+  color: white !important;
+}
+.bb.warning.btn:hover{
+  background-color: #f1b25b !important;
+}
+
+.bb.danger.btn{
+  background-color: #D9534F !important;
+  color: white !important;
+}
+.bb.danger.btn:hover{
+  background-color: #da5c58 !important;
+}
+
+
+
+.bb.disabled.btn{
+  background-color: #ABABB6 !important;
+  color: white !important;
+}
+/* SIZING */
+
+/*-mini-*/
+.bb.mini.btn:not([class*="circle"]){
+  font-size: 8px;
+  padding: 1px 10px 0px;
+  letter-spacing: 1px;
+}
+
+.bb.mini.circle.btn{
+  border-radius: 240px;
+  width:60px;
+  line-height:60px;
+  letter-spacing: 0.002em;
+  height:60px;
+  padding:0;
+  font-size: 10px;
+}
+
+/*-tiny-*/
+.bb.tiny.btn:not([class*="circle"]){
+  font-size: 11px;
+  padding: 3px 15px 3px;
+  letter-spacing: 1px;
+}
+
+.bb.tiny.circle.btn{
+  border-radius: 240px;
+  width:80px;
+  line-height:80px;
+  height:80px;
+  padding:0;
+  font-size: 12px;
+}
+
+/*-big-*/
+.bb.big.btn:not([class*="circle"]){
+  font-size: 20px;
+  padding: 11px 25px;
+}
+
+.bb.big.circle.btn{
+  border-radius: 240px;
+  width:120px;
+  line-height:120px;
+  height:120px;
+  padding:0;
+  font-size: 18px;
+}
+
+/*-huge-*/
+.bb.huge.btn:not([class*="circle"]){
+  font-size: 25px;
+  padding: 15px 30px;
+}
+
+.bb.huge.circle.btn{
+  border-radius: 240px;
+  width:140px;
+  line-height:140px;
+  height:140px;
+  padding:0;
+  font-size: 20px;
+}
+
+/*-massive-*/
+.bb.massive.btn:not([class*="circle"]){
+  font-size: 30px;
+  padding: 20px 35px;
+}
+
+.bb.massive.circle.btn{
+  border-radius: 240px;
+  width:160px;
+  line-height:160px;
+  height:160px;
+  padding:0;
+  font-size: 22px;
+}
+
+/* For Double */
+.bb.double.fluid.btn > .btn:first-child{
+  width: 50%;
+}
+
+.bb.double.fluid.btn > .btn:last-child{
+  width: 50%;
+}
+
+/****************************************
+* Blurbs Images
+* #img - Rubi Jihantoro
+* I'm Still Offline :(
+****************************************/
+img.bb.img{
+  cursor: normal;
+  padding: none;
+  margin: none;
+  opacity: 1.0;
+  border: none;
+}
+
+/* TYPES */
+img.bb.circle.img{
+  border-radius: 50%;
+}
+
+img.bb.rounded.img{
+  border-radius: 6px;
+}
+
+img.bb.fluid.img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+img.bb.avatar.img{
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+img.bb.shadow.img{
+  box-shadow: 0 0 3px #666666;
+}
+/* SIZING */
+.bb.mini.img{
+  width: 45px;
+  height: 45px;
+}
+.bb.tiny.img{
+  width: 80px;
+  height: 80px;
+}
+.bb.big.img{
+  width: 120px;
+  height: 120px;
+}
+.bb.huge.img{
+  width: 140px;
+  height: 140px;
+}
+.bb.massive.img{
+  width: 160px;
+  height: 160px;
+}
+
+/* COLOR */
+
+/*-yellow-*/
+img.bb.yellow.img{
+  box-shadow: 0 0 10px rgb(255, 255, 26);
+}
+
+/*-blue-*/
+img.bb.blue.img{
+  box-shadow: 0 0 10px rgb(127, 212, 255);
+}
+
+/*-teal-*/
+img.bb.teal.img{
+  box-shadow: 0 0 10px rgb(133, 224, 224);
+}
+
+/*-green-*/
+img.bb.green.img{
+  box-shadow: 0 0 10px rgb(102, 255, 102);
+}
+
+/*-red-*/
+img.bb.red.img{
+  box-shadow: 0 0 10px rgb(255, 102, 102);
+}
+
+/*-pink-*/
+img.bb.pink.img{
+  box-shadow: 0 0 10px rgb(255, 128, 213);
+}
+
+/*-orange-*/
+img.bb.orange.img{
+  box-shadow: 0 0 10px rgb(247, 179, 110);
+}
+
+/*-gray-*/
+img.bb.gray.img{
+  box-shadow: 0 0 10px rgb(217, 217, 217);
+}
+
+/*******************************************
+* Blurbs Container
+* #container - Rubi Jihantoro
+*******************************************/
+.bb.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .bb.container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .bb.container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .bb.container {
+    width: 1170px;
+  }
+}
+.bb.fluid-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/**************************************************
+* Blurbs Grid
+* #grid > column - Rubi Jihantoro
+* Semantic UI Style 16 Grid (Thanks :*)
+**************************************************/
+/*******************************
+            Standard
+*******************************/
+
+.bb.grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 0em;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.bb.grid > .column:not(.row),
+.bb.grid > .row > .column {
+  position: relative;
+  display: inline-block;
+  width: 6.25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+.bb.grid > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bb.grid > .column:not(.row) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.bb.grid > .row > [class*="one"].column,
+.bb.grid > .column.row > [class*="one"].column,
+.bb.grid > [class*="one"].column,
+.bb.column.grid > [class*="one"].column {
+  width: 6.25% !important;
+}
+
+.bb.grid > .row > [class*="two"].column,
+.bb.grid > .column.row > [class*="two"].column,
+.bb.grid > [class*="two"].column,
+.bb.column.grid > [class*="two"].column {
+  width: 12.5% !important;
+}
+
+.bb.grid > .row > [class*="three"].column,
+.bb.grid > .column.row > [class*="three"].column,
+.bb.grid > [class*="three"].column,
+.bb.column.grid > [class*="three"].column {
+  width: 18.75% !important;
+}
+
+.bb.grid > .row > [class*="four"].column,
+.bb.grid > .column.row > [class*="four"].column,
+.bb.grid > [class*="four"].column,
+.bb.column.grid > [class*="four"].column {
+  width: 25% !important;
+}
+
+.bb.grid > .row > [class*="five"].column,
+.bb.grid > .column.row > [class*="five"].column,
+.bb.grid > [class*="five"].column,
+.bb.column.grid > [class*="five"].column {
+  width: 31.25% !important;
+}
+
+.bb.grid > .row > [class*="six"].column,
+.bb.grid > .column.row > [class*="six"].column,
+.bb.grid > [class*="six"].column,
+.bb.column.grid > [class*="six"].column {
+  width: 37.5% !important;
+}
+
+.bb.grid > .row > [class*="seven"].column,
+.bb.grid > .column.row > [class*="seven"].column,
+.bb.grid > [class*="seven"].column,
+.bb.column.grid > [class*="seven"].column {
+  width: 43.75% !important;
+}
+
+.bb.grid > .row > [class*="eight"].column,
+.bb.grid > .column.row > [class*="eight"].column,
+.bb.grid > [class*="eight"].column,
+.bb.column.grid > [class*="eight"].column {
+  width: 50% !important;
+}
+
+.bb.grid > .row > [class*="nine"].column,
+.bb.grid > .column.row > [class*="nine"].column,
+.bb.grid > [class*="nine"].column,
+.bb.column.grid > [class*="nine"].column {
+  width: 56.25% !important;
+}
+
+.bb.grid > .row > [class*="ten"].column,
+.bb.grid > .column.row > [class*="ten"].column,
+.bb.grid > [class*="ten"].column,
+.bb.column.grid > [class*="ten"].column {
+  width: 62.5% !important;
+}
+
+.bb.grid > .row > [class*="eleven"].column,
+.bb.grid > .column.row > [class*="eleven"].column,
+.bb.grid > [class*="eleven"].column,
+.bb.column.grid > [class*="eleven"].column {
+  width: 68.75% !important;
+}
+
+.bb.grid > .row > [class*="twelve"].column,
+.bb.grid > .column.row > [class*="twelve"].column,
+.bb.grid > [class*="twelve"].column,
+.bb.column.grid > [class*="twelve"].column {
+  width: 75% !important;
+}
+
+.bb.grid > .row > [class*="thirteen"].column,
+.bb.grid > .column.row > [class*="thirteen"].column,
+.bb.grid > [class*="thirteen"].column,
+.bb.column.grid > [class*="thirteen"].column {
+  width: 81.25% !important;
+}
+
+.bb.grid > .row > [class*="fourteen"].column,
+.bb.grid > .column.row > [class*="fourteen"].column,
+.bb.grid > [class*="fourteen"].column,
+.bb.column.grid > [class*="fourteen"].column {
+  width: 87.5% !important;
+}
+
+.bb.grid > .row > [class*="fifteen"].column,
+.bb.grid > .column.row > [class*="fifteen"].column,
+.bb.grid > [class*="fifteen"].column,
+.bb.column.grid > [class*="fifteen"].column {
+  width: 93.75% !important;
+}
+
+.bb.grid > .row > [class*="sixteen"].column,
+.bb.grid > .column.row > [class*="sixteen"].column,
+.bb.grid > [class*="sixteen"].column,
+.bb.column.grid > [class*="sixteen"].column {
+  width: 100% !important;
+}
+
+/**************************************
+* Blurbs Menu
+* #menu
+*
+* Rubi Jihantoro
+**************************************/
+
+.bb.menu{
+    background-color: rgb(249, 249, 249) !important;
+    border-radius: 3px !important;
+    box-shadow: 0px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+    overflow: hidden;
+}
+
+.menu-list{
+    text-decoration: none !important;
+    margin: 0em !important;
+}
+
+.menu-list > li {
+    padding: 12px 12px !important;
+    display: inline-block !important;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+ul > li{
+  list-style-type: none !important;
+  margin-left: -5px;
+}
+li > a {
+    font-weight: bold;
+    display: inline-block !important;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.bb.top.fixed.menu > ul > li > ul{
+  position: fixed !important;
+}
+
+.menu-list > li:hover{
+  background-color: rgb(217, 217, 217) !important;
+}
+
+.dropdown-content{
+  position: absolute;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 4px 0;
+  margin: 12px 0 0 -12px !important;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-content.active{
+  display: block !important;
+}
+
+.dropdown-content > li > a{
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-content > li{
+  margin-left: 0px !important;
+}
+
+.dropdown-content > li:hover{
+  background-color: rgb(217, 217, 217) !important;
+}
+
+.menu-list > .visible{
+  background-color: rgb(242, 242, 242);
+}
+
+.bb.fixed.menu{
+  margin: 0em;
+  width: 100%;
+  left: 0px;
+  right: auto;
+  bottom: auto;
+  z-index: 5;
+}
+
+.bb.menu > .menu-list > li.float.right,
+.bb.menu > .menu-list > li > .btn{
+  background: transparent none !important;
+  margin-top: -2px !important;
+  margin-right: 5px !important;
+}
+
+.bb.fixed.top.menu{
+  background-color: white !important;
+  max-height: 58px !important;
+  font-weight: bold !important;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: -50px 0px !important;
+  z-index: 5;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #DCDCDC !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .175) !important;
+}
+
+.bb.fixed.top.menu > .menu-list > li{
+    padding: 4px 12px 12px 0px !important;
+    margin: 0px 0px !important;
+}
+
+.bb.fixed.top.menu > .menu-list > li:hover,
+.bb.fixed.top.menu > .menu-list > li > a:not([class~="btn"]):hover{
+  background: transparent none !important;
+  color: rgb(140, 140, 140) !important;
+}
+
+.bb.fixed.top.menu > .menu-list > .active{
+  background: transparent none !important;
+}
+
+.bb.fixed.top.menu > .menu-list > li > .dropdown-content{
+  margin-top: 19px !important;
+}
+
+.bb.fixed.top.menu > .menu-list > li.logo{
+  float: left !important;
+  font-size: 20px !important;
+  margin-right: 20px !important;
+  padding-top: 5px !important;
+  text-transform: uppercase !important;
+}
+
+.menu-list > li.float.right{
+  float: right !important;
+}
+
+.menu-list > li.float.right > a{
+  margin: 0px 10px !important;
+}
+
+
+.menu-list > li.logo{
+  margin-left: -30px !important;
+  float: left !important;
+  max-height: 30px !important;
+  padding: 15px 15px !important;
+  font-size: 18px !important;
+  line-height: 20px !important;
+  display: inline-block !important;
+}
+
+.menu-list > li.logo:hover{
+  background: transparent none !important;
+}
+
+.menu-list > li.logo > a > img,
+.menu-list > li.logo > img{
+  float: left !important;
+  max-height: 30px !important;
+  margin: -7px 0px !important;
+}
+
+/* TYPES */
+.bb.flat.menu{
+  border-radius: 0px;
+}
+
+.bb.menu .bb.btn{
+  margin-top: calc(3% - 3px) !important;
+  margin-right: 5px !important;
+}
+
+.bb.three.menu .bb.btn{
+  margin-top: calc(5% - 3px) !important;
+  margin-right: 5px !important;
+}
+
+.bb.menu .text-logo{
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  margin-right: 15px;
+  padding-top: 16px !important;
+  display: inline-block;
+}
+
+.bb.menu .bb.img{
+  margin-top: 5px;
+  max-height: 55px !important; 
+  vertical-align: top !important;
+}
+
+.bb.inverted.menu{
+
+}
+/*******************************************
+* Blurbs Content
+* #content - Rubi Jihantoro
+*******************************************/
+
+/*--------------
+   Card Count
+---------------*/
+
+.bb.contents{
+  box-sizing: inherit;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin-left: 5px !important;
+  margin-right: -15px !important;
+}
+
+.bb.contents > *{
+  display: inline-block !important;
+  margin: 0px 0px;
+}
+
+.bb.contents > .content:hover{
+  cursor: pointer !important;
+}
+
+.bb.two.contents {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+
+.bb.two.contents > .content {
+  width: 47% !important;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.bb.four.contents {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+
+.bb.four.contents > .content {
+  width: 22% !important;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.bb.six.contents {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+
+.bb.six.contents > .content {
+  width: 14% !important;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+
+.bb.eight.contents {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+
+.bb.eight.contents > .content {
+  width: 10% !important;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.bb.ten.contents {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+
+.bb.ten.contents > .content {
+  width: 8% !important;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/***************************************
+* Blurbs Input
+* #input
+*
+* Rubi Jihantoro
+****************************************/
+
+.bb.input {
+  position: relative;
+  font-weight: normal;
+  font-style: normal;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.bb.input input {
+  margin: 0em;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 1.2142em;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  padding: 0.67861429em 1em;
+  background: #FFFFFF;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  -webkit-transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  box-shadow: none;
+}
+
+.bb.input input::-webkit-input-placeholder {
+  color: rgba(191, 191, 191, 0.87);
+}
+
+.bb.input input::-moz-placeholder {
+  color: rgba(191, 191, 191, 0.87);
+}
+
+.bb.input input:-ms-input-placeholder {
+  color: rgba(191, 191, 191, 0.87);
+}
+
+.bb.disabled.input,
+.bb.input input[disabled] {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.bb.input.focus input,
+.bb.input input:focus {
+  border-color: #85B7D9;
+  background: #FFFFFF;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+}
+
+.bb.input.focus input::-webkit-input-placeholder,
+.bb.input input:focus::-webkit-input-placeholder {
+  color: rgba(115, 115, 115, 0.87);
+}
+
+.bb.input.focus input::-moz-placeholder,
+.bb.input input:focus::-moz-placeholder {
+  color: rgba(115, 115, 115, 0.87);
+}
+
+.bb.input.focus input:-ms-input-placeholder,
+.bb.input input:focus:-ms-input-placeholder {
+  color: rgba(115, 115, 115, 0.87);
+}
+
+.bb.icon.input > i.icon {
+  cursor: default;
+  position: absolute;
+  line-height: 1;
+  text-align: center;
+  top: 0px;
+  right: 0px;
+  margin: 0em;
+  height: 100%;
+  width: 2.67142857em;
+  opacity: 0.5;
+  border-radius: 0em 0.28571429rem 0.28571429rem 0em;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.bb.icon.input > i.icon:not(.link) {
+  pointer-events: none;
+}
+
+.bb.icon.input input {
+  padding-right: 2.67142857em !important;
+}
+
+.bb.icon.input > i.icon:before,
+.bb.icon.input > i.icon:after {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  margin-top: -0.5em;
+}
+
+.bb.icon.input > i.link.icon {
+  cursor: pointer;
+}
+
+.bb.icon.input > i.circular.icon {
+  top: 0.35em;
+  right: 0.5em;
+}
+
+.bb[class*="left icon"].input > i.icon {
+  right: auto;
+  left: 1px;
+  border-radius: 0.28571429rem 0em 0em 0.28571429rem;
+}
+
+.bb[class*="left icon"].input > i.circular.icon {
+  right: auto;
+  left: 0.5em;
+}
+
+.bb[class*="left icon"].input > input {
+  padding-left: 2.67142857em !important;
+  padding-right: 1em !important;
+}
+
+.bb.icon.input > input:focus ~ i.icon {
+  opacity: 1;
+}
+
+.bb.fluid.input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bb.fluid.input > input {
+  width: 0px !important;
+}
+
+.bb.mini.input {
+  font-size: 0.78571429em;
+}
+
+.bb.small.input {
+  font-size: 0.92857143em;
+}
+
+.bb.input {
+  font-size: 1em;
+}
+
+.bb.large.input {
+  font-size: 1.14285714em;
+}
+
+.bb.big.input {
+  font-size: 1.28571429em;
+}
+
+.bb.huge.input {
+  font-size: 1.42857143em;
+}
+
+.bb.massive.input {
+  font-size: 1.71428571em;
+}
+
+/*************************************
+* Blurbs Divider
+* #divider
+* 
+* Rubi Jihantoro
+**************************************/
+.bb.divider {
+  line-height: 1;
+  margin: 1rem 0rem;
+  height: 0em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.85);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bb.divider:not(.vertical):not(.horizontal) {
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bb.grid > .column + .divider,
+.bb.grid > .row > .column + .divider {
+  left: auto;
+}
+
+.bb.divider > .icon {
+  margin: 0rem;
+  font-size: 1rem;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.bb.hidden.divider {
+  border-color: transparent !important;
+}
+
+.bb.hidden.divider:before,
+.bb.hidden.divider:after {
+  display: none;
+}
+
+.bb.divider {
+  font-size: 1rem;
+}
+.bb.vertical.divider {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin: 0rem;
+  padding: 0em;
+  width: auto;
+  height: 50%;
+  line-height: 0em;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.bb.vertical.divider:before,
+.bb.vertical.divider:after {
+  position: absolute;
+  left: 50%;
+  content: '';
+  z-index: 3;
+  border-left: 1px solid rgba(34, 36, 38, 0.15);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  width: 0%;
+  height: calc(100% -  1rem );
+}
+
+.bb.vertical.divider:before {
+  top: -100%;
+}
+
+.bb.vertical.divider:after {
+  top: auto;
+  bottom: 0px;
+}
+/***********************************
+* Blurbs Segment
+* #segment
+*
+* Rubi Jihantoro
+************************************/
+
+.bb.segment{
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  margin: 1rem 0em;
+  padding: 1em 1em;
+  border-radius: 8px 8px 5px 5px;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+/***********************************
+* Blurbs Header
+* #header
+*
+* Rubi Jihantoro
+* For Header Content Like Profile 
+* Info or something like that
+************************************/
+
+.bb.header{
+  display: block;
+  text-align: center !important;
+  background: transparent none !important;
+}
+
+.bb.header > .bb.grid > .column > .action,
+.bb.header > .action{
+  display: inline-block !important;
+}
+
+.bb.header > .bb.grid > .column > .header,
+.bb.header > .header{
+  font-size: 20px !important;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bb.header > .bb.grid > .column > .header > .icon,
+.bb.header > .header > .icon{
+  margin-right: 1px !important;
+}
+
+.bb.header > .bb.grid > .column > .icon,
+.bb.header > .icon{
+  font-size: 50px !important;
+  margin-top: 0px !important;
+  display: block !important;
+  margin: 40px auto 15px !important;
+}
+
+.bb.header > .bb.grid > .column > img,
+.bb.header > img{
+  width: 150px;
+  height: 150px;
+  margin: 10px auto 15px !important;
+  display: block !important;
+}
+
+.bb.header > .description{
+  margin-top: 10px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+}
+
+.bb.header > .bb.grid > .column > .description,
+.bb.header > .bb.grid > .column{
+  text-align: left !important;
+}
+
+/*******************************
+* Blurbs Discuss
+* #discuss
+*
+* Rubi Jihantoro
+********************************/
+.bb.comments {
+  margin: 1.5em 0em;
+  max-width: 650px;
+}
+
+.bb.comments:first-child {
+  margin-top: 0em;
+}
+
+.bb.comments:last-child {
+  margin-bottom: 0em;
+}
+
+.bb.comments .comment {
+  position: relative;
+  background: none;
+  margin: 0.5em 0em 0em;
+  padding: 0.5em 0em 0em;
+  border: none;
+  border-top: none;
+  line-height: 1.2;
+}
+
+.bb.comments .comment:first-child {
+  margin-top: 0em;
+  padding-top: 0em;
+}
+
+.bb.comments .comment .comments {
+  margin: 0em 0em 0.5em 0.5em;
+  padding: 1em 0em 1em 1em;
+}
+
+.bb.comments .comment .comments:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.bb.comments .comment .comments .comment {
+  border: none;
+  border-top: none;
+  background: none;
+}
+
+.bb.comments .comment .avatar {
+  display: block;
+  width: 2.5em;
+  height: auto;
+  float: left;
+  margin: 0.2em 0em 0em;
+}
+
+.bb.comments .comment img.avatar,
+.bb.comments .comment .avatar img {
+  display: block;
+  margin: 0em auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+.bb.comments .comment > .content {
+  display: block;
+}
+
+
+.bb.comments .comment > .avatar ~ .content {
+  margin-left: 3.5em;
+}
+
+.bb.comments .comment .author {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+}
+
+.bb.comments .comment a.author {
+  cursor: pointer;
+}
+
+.bb.comments .comment a.author:hover {
+  color: #1e70bf;
+}
+
+.bb.comments .comment .metadata {
+  display: inline-block;
+  margin-left: 0.5em;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.875em;
+}
+
+.bb.comments .comment .metadata > * {
+  display: inline-block;
+  margin: 0em 0.5em 0em 0em;
+}
+
+.bb.comments .comment .metadata > :last-child {
+  margin-right: 0em;
+}
+
+.bb.comments .comment .text {
+  margin: 0.25em 0em 0.5em;
+  font-size: 1em;
+  word-wrap: break-word;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.3;
+}
+
+.bb.comments .comment .actions {
+  font-size: 0.875em;
+}
+
+.bb.comments .comment .actions a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0em 0.75em 0em 0em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.bb.comments .comment .actions a:last-child {
+  margin-right: 0em;
+}
+
+.bb.comments .comment .actions a.active,
+.bb.comments .comment .actions a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.bb.comments > .reply.form {
+  margin-top: 1em;
+}
+
+.bb.comments .comment .reply.form {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.bb.comments .reply.form textarea {
+  font-size: 1em;
+  height: 12em;
+}
+
+/*-------------------
+        Sizes
+--------------------*/
+
+.bb.mini.comments {
+  font-size: 0.78571429rem;
+}
+
+.bb.tiny.comments {
+  font-size: 0.85714286rem;
+}
+
+.bb.comments {
+  font-size: 1em;
+}
+
+.bb.big.comments {
+  font-size: 1.28571429rem;
+}
+
+.bb.huge.comments {
+  font-size: 1.2em;
+}
+
+.bb.massive.comments {
+  font-size: 1.71428571rem;
+}
+
+/*- CHAT STYLE */
+.bb.chat.discuss{
+  width: 100% !important;
+  height: 300px !important;
+  display: block !important;
+  position: relative !important;
+}
+
+.bb.chat.discuss > .you{
+  clear: left !important;
+  text-align:left;
+  position:solid;
+  margin-left:5px;
+  float:left;
+  margin-top:10px;
+  margin-bottom:10px;
+  min-width:100%;
+  display: block !important;
+}
+
+.bb.chat.discuss > .you > label{
+  min-width:230px !important;
+  clear:right;
+}
+
+.bb.chat.discuss > .me{
+  clear: right !important;
+  text-align:right;
+  position:solid;
+  margin-right:5px;
+  float:right;
+  margin-top:10px;
+  margin-bottom:10px;
+  min-width:100%;
+  display: block !important;
+}
+
+.bb.chat.discuss > .me > label{
+  min-width:230px !important;
+  clear:left;
+}
+
+/*******************************
+* Blurbs Form
+* #form
+*
+* Rubi Jihantoro
+********************************/
+.bb.form {
+  position: relative;
+  max-width: 100%;
+}
+
+.bb.form textarea,
+.bb.form input{
+  width: 100%;
+  vertical-align: top;
+}
+
+.bb.form ::-webkit-datetime-edit,
+.bb.form ::-webkit-inner-spin-button {
+  height: 1.2142em;
+}
+
+.bb.form input{
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0em;
+  outline: none;
+  -webkit-appearance: none;
+  tap-highlight-color: rgba(255, 255, 255, 0);
+  line-height: 1.2142em;
+  padding: 0.67861429em 1em;
+  font-size: 1em;
+  background: #FFFFFF;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  -webkit-transition: color 0.1s ease, border-color 0.1s ease;
+  transition: color 0.1s ease, border-color 0.1s ease;
+}
+
+.bb.form input:focus {
+  color: rgba(0, 0, 0, 0.95);
+  border-color: #85B7D9;
+  border-radius: 0.28571429rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35) inset;
+}
+
+.bb.form textarea:focus {
+  color: rgba(0, 0, 0, 0.95);
+  border-color: #85B7D9;
+  border-radius: 0.28571429rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35) inset;
+  -webkit-appearance: none;
+}
+
+.bb.input {
+  position: relative;
+  font-weight: normal;
+  font-style: normal;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.bb.input input {
+  margin: 0em;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 1.2142em;
+  padding: 0.67861429em 1em;
+  background: #FFFFFF;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  -webkit-transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  box-shadow: none;
+}
+
+.bb.input input::-webkit-input-placeholder {
+  color: rgba(191, 191, 191, 0.87);
+}
+
+.bb.input input::-moz-placeholder {
+  color: rgba(191, 191, 191, 0.87);
+}
+
+.bb.input input:-ms-input-placeholder {
+  color: rgba(191, 191, 191, 0.87);
+}
+
+/*--------------------
+         Icon
+---------------------*/
+
+.bb.icon.input > i.icon {
+  cursor: default;
+  position: absolute;
+  line-height: 1;
+  text-align: center;
+  top: 0px;
+  right: 0px;
+  margin: 0em;
+  height: 100%;
+  width: 2.67142857em;
+  opacity: 0.5;
+  border-radius: 0em 0.28571429rem 0.28571429rem 0em;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.bb.icon.input > i.icon:not(.link) {
+  pointer-events: none;
+}
+
+.bb.icon.input input {
+  padding-right: 2.67142857em !important;
+}
+
+.bb.icon.input > i.icon:before,
+.bb.icon.input > i.icon:after {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  margin-top: -0.5em;
+}
+
+.bb.icon.input > i.link.icon {
+  cursor: pointer;
+}
+
+.bb.icon.input > i.circular.icon {
+  top: 0.35em;
+  right: 0.5em;
+}
+
+.bb.icon.input > input:focus ~ i.icon {
+  opacity: 1;
+}
+
+.bb.fluid.input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100% !important;
+}
+
+.bb.mini.input {
+  font-size: 0.78571429em;
+}
+
+.bb.input {
+  font-size: 1em;
+}
+
+.bb.big.input {
+  font-size: 1.28571429em;
+}
+
+.bb.huge.input {
+  font-size: 1.42857143em;
+}
+
+.bb.massive.input {
+  font-size: 1.71428571em;
+}
+
+/*********************************
+* Blurbs Cards
+* #card
+* 
+* Rubi Jihantoro
+**********************************/
+.bb.card{
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0px;
+  background: #FFFFFF;
+  padding: 0em;
+  border: none;
+  border-radius: 0.28571429rem;
+  box-shadow: 0px 1px 3px 0px #D4D4D5, 0px 0px 0px 1px #D4D4D5;
+  -webkit-transition: box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.1s ease, -webkit-transform 0.1s ease;
+  z-index: '';
+  margin: 1em 0em;
+}
+
+.bb.card > .img{
+  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+  max-width: 100%;
+  min-width: 100%;
+  height: 250px;
+  position: relative;
+  display: block;
+  padding: 0em;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.bb.flat.card > .title,
+.bb.card > .title{
+  font-size: 2vmin;
+  margin: 10px;
+  display: block;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.bb.flat.card > .description,
+.bb.card > .description{
+  display: block;
+  font-size: 13px;
+  color: rgb(38, 38, 38);
+  margin: 10px;
+  text-align: left;
+}
+
+
+.bb.card > .bb.double.btn{
+  background: transparent none !important;
+  display: inline-block;
+  min-width: 100% !important;
+  margin: -2px !important;
+  padding: 0px !important;
+}
+
+.bb.card > .bb.double.btn > .btn:first-child{
+  border-radius: 0px 0px 0px 3px;
+  margin: 0px -2px;
+  min-width: 50% !important;
+  max-width: 50% !important;
+}
+
+.bb.card > .bb.double.btn > .btn:last-child{
+  border-radius: 0px 0px 4px 0px;
+  margin: 0px -2px;
+  min-width: 50% !important;
+  max-width: 50% !important;
+}
+
+.bb.flat.card{
+  box-shadow:0 4px 6px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border-radius: 0px !important;
+}
+
+.bb.flat.card > .bb.double.btn{
+  background: transparent none !important;
+  display: inline-block;
+  min-width: 100% !important;
+  margin: -2px !important;
+  padding: 0px !important;
+}
+
+.bb.flat.card > .bb.double.btn > .btn:first-child{
+  border-radius: 0px;
+  margin: 0px -2px;
+  min-width: 50% !important;
+  max-width: 50% !important;
+}
+
+.bb.flat.card > .bb.double.btn > .btn:last-child{
+  border-radius: 0px;
+  margin: 0px -2px;
+  min-width: 50% !important;
+  max-width: 50% !important;
+}
+
+.bb.flat.card > img{
+  width: 100% !important;
+}
+/*********************************
+* Blurbs List
+* #list
+*
+* Rubi Jihantoro
+**********************************/
+.bb.list{
+  display: block;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: transparent none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.bb.list > div.item{
+  display: block !important;
+  width: 100% !important;
+  border-bottom: 1px solid #DCDCDC;
+  background: transparent none !important;
+  padding: 5px 0px;
+  border-radius: 3px !important;
+}
+
+.bb.list > div.item:hover{
+  background-color: rgb(242, 242, 242) !important;
+}
+
+
+.bb.list > div.item > *{
+  display: inline-block !important;
+}
+
+.bb.list > div.item > .image{
+  width: 9% !important;
+  display: inline-block !important;
+  position: static !important;
+  margin-left: 3px !important;
+}
+
+.bb.list > div.item > .image > img{
+  width: 100px !important;
+  height: 80px !important;
+}
+
+.bb.list > div.item > div:not(.image){
+  width: 89% !important;
+} 
+
+.bb.list > .item > .content{
+  margin-left: 10px !important;
+  vertical-align: top;
+  width: 70% !important;
+  position: static !important;
+}
+
+.bb.list > .item > .content > *{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.bb.list > .item > .content > .title{
+  cursor: pointer;
+  margin-bottom: 4px !important;
+  font-size: 20px !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.bb.list > .item > .content > .description{
+  margin-bottom: 4px !important;
+  color: rgb(77, 77, 77) !important;
+}
+
+.bb.list > .item > .content > .right-meta{
+  cursor: pointer;
+  float: right !important;
+  font-size: 14px !important;
+  color: black !important;
+  vertical-align: top !important;
+  margin: 0em !important;
+}
+
+/*
+* W3 Switch
+* #switch
+*
+* W3
+* note : I Need Some Sleep :/
+*/
+.bb.switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+.bb.switch input {
+  display:none;
+}
+
+.bb.slider.switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.bb.slider.switch:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .bb.slider.switch {
+  background-color: #2196F3;
+}
+
+input:checked + .bb.slider.green.switch {
+  background-color: #44B480;
+}
+
+input:focus + .bb.slider.switch {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .bb.slider.switch:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.bb.slider.round.switch {
+  border-radius: 34px;
+}
+
+.bb.slider.round.switch:before {
+  border-radius: 50%;
+}
+/***********************************************
+* Blurbs Modal
+* #modal
+*
+* Rubi Jihantoro
+************************************************/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 7 !important;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+    border-radius: 5px !important;
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/****************************************
+* Blurbs SideNav
+* #sidenav
+*
+* Rubi Jihantoro
+*****************************************/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}

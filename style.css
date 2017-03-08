@@ -1,0 +1,510 @@
+/*
+Theme Name: Gogo Tomago
+Theme URI: https://kutemukan.com/see/gogo-tomago-wordpress-theme/
+Author: Rubi Jihantoro
+Author URI: http://kutemukan.com/profile/ruby/
+Description: Created at 13 Feb 2017 by Rubi Jihantoro (1.0.0 is First Version Of Gogo Tomago), he made this (wordpress theme) using Blurbs Framework,JQuery And Sublime Text as text editor, this theme avaible on themeforest (if you want support for next rubi project) or you can get it free on wordpress theme library (wordpress.org), Features : Human Readable Date (RealTime h:i:s), Smart Design, Comment Example, Super Fast Design, etc | watch more rubi project at https://kutemukan.com/profile/ruby
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: fast, smart, black, flat, Blurbs, Blurbs framework, modern, clean, container, no grid, kutemukan.com, kutemukan project, etc
+Text Domain: GogoTomago
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/ /*
+* Gogo Tomago Wordpress Theme
+* Custom CSS
+* 
+* Writer : Rubi Jihantoro | 10 Jan 2017 */
+
+.fluid-container{
+  margin: -15px !important;
+}
+
+.top-bg{
+  background-color: #222222 !important;
+  min-height: 70px !important;
+}
+
+.bb.menu{
+  background: transparent none !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+  min-height: 70px !important;
+}
+
+ul.menu-list{
+  margin-top: 20px !important;
+  max-height: 75px !important;
+  min-height: 75px !important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222222;
+  padding-top: 5px !important;
+}
+.menu-list > li.logo{
+  display: inline-block !important;
+  margin-left: 0px !important;
+  margin-top: 5px;
+}
+.menu-list > li:not(.logo){
+  display: inline-block !important;
+  margin: 15px 30px 15px;
+  vertical-align: top;
+  padding-top: 13px;
+}
+.menu-list > li > a{
+  font-style: normal !important;
+  text-decoration: none !important;
+  color: white !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.menu-header-menu-container > ul > li{
+  display: inline-block !important;
+  margin: 15px 30px 15px;
+  vertical-align: top;
+  padding-top: 5px;
+}
+.menu-header-menu-container > ul > li > a{
+  font-style: normal !important;
+  text-decoration: none !important;
+  color: white !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu-header-menu-container > ul > li,
+.menu-header-menu-container,
+.menu-header-menu-container > .menu{
+  display: inline-block !important;
+  vertical-align: top;
+}
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+ #menu-detail{
+  margin: -40px 0px 0px 0px !important;
+  padding: 0px !important;
+  height: 30px !important;
+  position: fixed;
+  width: 100%;
+ }
+ #menu-detail > ul > li{
+  display: inline-block !important;
+  margin: 10px !important;
+  padding: 0px !important;
+
+ }
+  #menu-detail > ul > li:hover{
+    background-color: transparent !important;
+  }
+.footer > .menu-footer-menu-container > ul > li{
+  display: inline-block !important;
+  margin-right: 25px;
+}
+.footer > .menu-footer-menu-container > ul > li > a{
+  font-weight: normal;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background: transparent none !important;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeslide, .dot:hover {
+  background-color: white !important;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.mySlides > img{
+  height: 400px !important;
+  width: 100% !important;
+}
+.three{
+  height: 300px;
+  background-color: #011118;
+  margin-top: -5px !important;
+  display: block;
+}
+.icard{
+  display: inline-block;
+  padding-right: 6px;
+}
+
+.icard > img{
+  max-width: 370px;
+}
+#seeall{
+  border: 2px solid #222222 !important;
+  color: #222222 !important;
+    background: transparent none !important;
+    padding: 5px 10px !important;
+    border-radius: 0px !important;
+    font-weight: bold !important;
+}
+
+.content{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.content > img{
+  width: 100%;
+  height: 215px;
+  border: 1px solid #E1E1E1 !important;
+}
+.content > a{
+  font-weight: bold;
+}
+.footer > a {
+  color:#8A8A8A;
+  margin-right: 20px;
+}
+.black-bg.ano{
+  margin-top: -5px;
+  min-height: 310px !important;
+  min-width: 100%;
+  background-color: #222222;
+}
+.three{
+  height: 185px;
+  margin-right: 5px;
+  width: calc(30% + 25px);
+  margin: 0px 5px 0px 5px;
+  display: inline-block;
+}
+div.three{
+  height: 185px;
+  margin: 0px 5px 0px 5px;
+  display: inline-block;
+  width: calc(30% + 25px);
+}
+.three{
+  cursor: pointer;
+  height: 185px;
+  margin-right: 5px;
+  width: 100%;
+}
+.three:first-child{
+  margin-left: -5px;
+}
+.three:last-child{
+  margin-left: 5px;
+}
+.cthree{
+  margin-left: 0px;
+}
+[anim]{
+  display: none;
+  width: calc(90% + 34px);
+  margin-left: -4px;
+}
+.ileft {
+  width: 30%;
+  min-height: 340px;
+  background-color: #222222;
+  opacity: 0.8;
+}
+.ileft::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    margin-top: -5px;
+    border-width: 165px;
+    border-style: solid;
+    border-color: transparent transparent transparent #222222;
+}
+.ileft > h1{
+  margin: 35px 0px 0px 25px !important;
+  padding: 0px !important;
+  color: white;
+  position: absolute;
+  font-family:"Indie Flower",cursive;
+}
+.ileft > h2{
+  margin: 85px 0px 0px 25px !important;
+  padding: 0px !important;
+  color: white;
+  position: absolute;
+  font-family:"Indie Flower",cursive;
+  font-size: 20px;
+  border-top: 1px solid white;
+}
+.iright {
+  width: 25%;
+  min-height: 340px;
+  background-color: #222222;
+  opacity: 0.8;
+  right: 0;
+  top: calc(7% + 6px);
+  position: absolute;
+}
+.iright::after {
+    content: "";
+    position: absolute;
+    top: 65%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 195px;
+    border-style: solid;
+    border-color: transparent #222222 transparent transparent;
+}
+.iright > div > .icon{
+  display: inline-block;
+  margin-top: 190%;
+}
+.iright > div{
+  position: absolute;
+  margin-left: 60px !important;
+}
+.iright > b{
+  position: absolute;
+  top: 78%;
+  right: 2%;
+  z-index: 6;
+  color: white;
+  width: 100%;
+}
+.iright > i:not(.icon){
+  position: absolute;
+  top: 85%;
+  right: 30%;
+  z-index: 6;
+  color: white;
+  width: 100%;
+}
+#lke{
+  position: absolute;
+  z-index: 5;
+  min-height: 300px;
+  background-color: white;
+  width:100%;
+}
+.left-list{
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+.left-list > .item{
+  display: block;
+}
+.left-list > .item > .img{
+  width:15%;
+  height:100px;
+  display: inline-block !important;
+}
+.left-list > .item > .img > img{
+  height:100px;
+  width: 100%;
+}
+.left-list > .item > .act{
+  vertical-align: top !important;
+  width: 35%;
+  display: inline-block !important;
+  margin-left: 15px;
+}
+.left-list > .item > .act > .eps{
+  text-transform: capitalize;
+  font-size: 12px;
+  color: #DF6E22;
+}
+.left-list > .item > .act > .title{
+  color: #DF6E22;
+  font-size: 18px;
+
+}
+.left-list > .item > .act > .date{
+  color: #DF6E22;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.pleft-list{
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+.pleft-list > .item{
+  display: block;
+}
+.pleft-list > .item > .img{
+  width:15%;
+  height:100px;
+  display: inline-block !important;
+}
+.pleft-list > .item > .img > img{
+  height:100px;
+  width: 100%;
+}
+.pleft-list > .item > .act{
+  vertical-align: top !important;
+  width: 35%;
+  display: inline-block !important;
+  margin-left: 15px;
+}
+.pleft-list > .item > .act > .eps{
+  text-transform: capitalize;
+  font-size: 12px;
+  color: #000000;
+}
+.pleft-list > .item > .act > .title{
+  color: #000000;
+  font-size: 18px;
+
+}
+.pleft-list > .item > .act > .date{
+  color: #000000;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.pleft-list > .item > .btn{
+  color: #000000;
+  float: right;
+}
+.pleft-list > .item > .btn > a.btn{
+
+  border: 2px solid #222222 !important;
+  color: #222222 !important;
+    background: transparent none !important;
+    padding: 4px 13px !important;
+    border-radius: 0px !important;
+    font-weight: bold !important;
+    margin-top: 30px;
+}
+.synopsys{
+  display: block;
+}
+.synopsys > h1{
+  margin:10px 4px;
+  padding: 0px;
+  font-size: 20px;
+  color: #DF6E22;
+  font-weight: normal;
+}
+.synopsys > p{
+  margin:10px 4px;
+  padding: 0px;
+  color: #222222;
+}
+.author{
+  display: block;
+}
+.author > h1{
+  display: block;
+  margin:10px 4px;
+  padding: 0px;
+  font-size: 20px;
+  color: #DF6E22;
+  font-weight: normal;
+}
+.author-list{
+  display: block;
+}
+.author-list > .item{
+  display: block;
+  margin: 2px 0px;
+}
+.author-list > .item > .img{
+  display: inline-block;
+  width: 8%;
+}
+.author-list > .item > .img > img{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius:50%; 
+}
+.author-list > .item > .title{
+  display: inline-block;
+  vertical-align: top;
+}
+.author-list > .item > .title > b:last-child{
+  font-weight: normal;
+}
+#ayam{
+  background-color: #222222 !important;
+  height: 45px !important;
+  position:fixed;
+  width: 100%;
+}
+#ayam > .menu-list{
+  margin-top: 0px !important;
+}
+#ayam > .menu-list > li{
+  margin-right: 5px !important;
+}
